@@ -2,7 +2,7 @@ name: Build and Deploy Marp Presentation
 
 on:
   push:
-    branches: [main, master]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -21,21 +21,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
       - name: Install Marp CLI
-        run: npm install @marp-team/marp-cli@latest
+        run: npm install -g @marp-team/marp-cli@3
 
-      - name: Build PDF (for download)
-        run: npx @marp-team/marp-cli@latest build microsoft-build-2026.marp.html --pdf --allow-local-files -o microsoft-build-2026.pdf
+      - name: Build PDF
+        run: marp microsoft-build-2026.marp.html --pdf --allow-local-files -o microsoft-build-2026.pdf
 
-      - name: Upload artifact (HTML + PDF)
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
