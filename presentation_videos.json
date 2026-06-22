@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Microsoft Build 2026 | Satya Nadella Opening Keynote",
+    "channel": "Microsoft",
+    "duration": "2:22:55",
+    "description": "Keynote completa de Satya con todos los anuncios",
+    "url": "https://www.youtube.com/watch?v=NOT_FOUND_NEED_ID",
+    "type": "main"
+  },
+  {
+    "title": "Microsoft Build 2026: 20+ Big Announcements in 16 Minutes",
+    "channel": "Vlad Talks Tech",
+    "duration": "16:00",
+    "description": "Recap de todos los anuncios en 16 minutos",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "GitHub App + Rayfin: Microsoft Build 2026",
+    "channel": "Microsoft Developer",
+    "duration": "5:47",
+    "description": "Cassidy Williams muestra Rayfin en el GitHub Copilot app",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "Build and ship enterprise app backends with Rayfin",
+    "channel": "Microsoft Fabric",
+    "duration": "3:31",
+    "description": "Demo de Rayfin SDK y CLI para backends enterprise",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "Rayfin: From Prompt to Production on Microsoft Fabric",
+    "channel": "Microsoft Fabric",
+    "duration": "1:22",
+    "description": "Vídeo corto de Rayfin desde prompt a producción",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "Rayfin | Go from prompt to production backend",
+    "channel": "Microsoft Mechanics",
+    "duration": "8:39",
+    "description": "Demo completa de Rayfin con 11 capítulos",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "Frontier Tuning: Microsoft Build 2026",
+    "channel": "Microsoft Developer",
+    "duration": "5:28",
+    "description": "Tanaya Yadav demuestra Frontier Tuning",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "Introducing Frontier Tuning | Microsoft AI Models",
+    "channel": "Microsoft",
+    "duration": "2:49",
+    "description": "Introducción a Frontier Tuning",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "OpenClaw + Windows: Microsoft Build 2026",
+    "channel": "Microsoft Developer",
+    "duration": "8:58",
+    "description": "OpenClaw en Windows",
+    "url": "",
+    "type": "main"
+  },
+  {
+    "title": "Describe the app you want with Rayfin",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "New updates on Github copilot app | Rayfin SDK | Fabric agent | 2026",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "GitHub App | Microsoft Build Day 1 is streaming now!",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "Microsoft just released MAI-Code-1-Flash in GitHub Copilot",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "Sobre el modelo MAI-Code-1-Flash",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "GitHub Copilot Is Now an Agent Platform | Build 2026 Coding Agent Explained",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "What is Microsoft Foundry & how it works?",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "MAI-Code-1-Flash: Microsoft's tiny coding model in Copilot",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "Microsoft 365 Copilot's new Analyst Agent can analyze your data for you",
+    "channel": "Short",
+    "duration": "<60s",
+    "description": "",
+    "url": "",
+    "type": "short"
+  },
+  {
+    "title": "Build 2026 in 15 Minutes",
+    "channel": "John Savill's Technical Training",
+    "duration": "15:00",
+    "description": "Resumen de Build 2026 en 15 minutos",
+    "url": "",
+    "type": "creator"
+  },
+  {
+    "title": "Microsoft AI Update May 2026",
+    "channel": "John Savill's Technical Training",
+    "duration": "15:00",
+    "description": "",
+    "url": "",
+    "type": "creator"
+  },
+  {
+    "title": "Trying out the GitHub Copilot App",
+    "channel": "Scott Hanselman",
+    "duration": "6:10",
+    "description": "Scott prueba el GitHub Copilot App en directo",
+    "url": "",
+    "type": "creator"
+  },
+  {
+    "title": "Scott Hanselman Showcases Engineering with AI LIVE from Microsoft Build 2026",
+    "channel": "The Neuron",
+    "duration": "44:00",
+    "description": "Scott en directo desde Build 2026",
+    "url": "",
+    "type": "creator"
+  }
+]
