@@ -6,808 +6,773 @@
   <title>Microsoft Build 2026 — GitHub Copilot, MAI y el Futuro Agéntico</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@marp-team/marp-core@3/dist/marp.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@300;400;600;700&display=swap');
+    /* ============================================
+       Microsoft Build 2026 — Official Design System
+       Colors from build.microsoft.com
+       ============================================ */
     
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Segoe+UI:wght@300;400;600;700&display=swap');
+
     @page {
-      margin: 2rem;
+      margin: 0;
       size: 16:9;
     }
-    
+
+    :root {
+      --build-black: #000000;
+      --build-dark: #1E1E1E;
+      --build-dark-gray: #2D2D2D;
+      --build-mid-gray: #333333;
+      --build-light-gray: #E6E6E6;
+      --build-white: #FFFFFF;
+      --build-yellow: #FFC107;
+      --build-yellow-dark: #FFB900;
+      --build-blue: #00A4EF;
+      --build-blue-microsoft: #0078D4;
+      --build-cyan: #00D4FF;
+      --build-pink: #FF1493;
+      --build-purple: #9400D3;
+      --build-green: #32CD32;
+      --build-orange: #FF8C00;
+      --build-red: #DC143C;
+      --build-text-secondary: #999999;
+      --build-text-muted: #666666;
+    }
+
     * {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif !important;
+      margin: 0;
+      padding: 0;
     }
-    
+
+    body {
+      background: var(--build-black);
+    }
+
     section {
-      padding: 2rem 3rem !important;
+      padding: 3rem 4rem !important;
+      background: var(--build-black);
+      color: var(--build-white);
+      position: relative;
+      overflow: hidden;
     }
+
+    /* ============================================
+       Typography
+       ============================================ */
     
-    h1 {
-      font-size: 2.8em !important;
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'JetBrains Mono', 'Consolas', 'Courier New', monospace !important;
       font-weight: 700 !important;
-      background: linear-gradient(135deg, #0078D4, #00B4D8, #7B68EE);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 0.5em !important;
+      letter-spacing: -0.02em;
     }
+
+    p, li, span, a, div {
+      font-family: 'Segoe UI', 'Segoe UI Variable', system-ui, -apple-system, sans-serif !important;
+    }
+
+    /* ============================================
+       Hero Slide (Title)
+       ============================================ */
+    
+    section.hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: var(--build-black);
+      position: relative;
+    }
+
+    section.hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(255, 193, 7, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(0, 164, 239, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(148, 0, 211, 0.05) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Pixel-art decorative blocks */
+    section.hero::after {
+      content: '';
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      width: 120px;
+      height: 120px;
+      background-image:
+        linear-gradient(var(--build-yellow) 20px, transparent 20px),
+        linear-gradient(var(--build-blue) 20px, transparent 20px),
+        linear-gradient(var(--build-pink) 20px, transparent 20px),
+        linear-gradient(var(--build-green) 20px, transparent 20px),
+        linear-gradient(var(--build-purple) 20px, transparent 20px),
+        linear-gradient(var(--build-orange) 20px, transparent 20px);
+      background-size: 20px 20px;
+      background-repeat: repeat;
+      opacity: 0.3;
+      image-rendering: pixelated;
+      pointer-events: none;
+    }
+
+    section.hero h1 {
+      font-size: 3.2em !important;
+      color: var(--build-white) !important;
+      -webkit-text-fill-color: var(--build-white) !important;
+      margin-bottom: 0.3em !important;
+      line-height: 1.1 !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    section.hero h1 .accent-blue {
+      color: var(--build-blue) !important;
+      -webkit-text-fill-color: var(--build-blue) !important;
+    }
+
+    section.hero h1 .accent-yellow {
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+    }
+
+    section.hero .subtitle {
+      font-size: 1.5em !important;
+      font-weight: 300 !important;
+      color: var(--build-text-secondary) !important;
+      -webkit-text-fill-color: var(--build-text-secondary) !important;
+      margin-bottom: 1.5em !important;
+      position: relative;
+      z-index: 1;
+    }
+
+    section.hero .tagline {
+      font-family: 'JetBrains Mono', monospace !important;
+      font-size: 0.9em !important;
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+      padding: 0.5em 1.2em !important;
+      border: 1px solid var(--build-yellow);
+      border-radius: 4px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ============================================
+       Section Headers
+       ============================================ */
     
     h2 {
       font-size: 2em !important;
-      font-weight: 600 !important;
-      color: #0078D4 !important;
-      border-bottom: 3px solid #0078D4;
-      padding-bottom: 0.3em !important;
-      margin-bottom: 0.8em !important;
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+      margin-bottom: 1.2em !important;
+      padding-bottom: 0.4em !important;
+      border-bottom: 2px solid var(--build-mid-gray) !important;
     }
-    
+
     h3 {
-      font-size: 1.4em !important;
-      font-weight: 600 !important;
-      color: #005A9E !important;
+      font-size: 1.3em !important;
+      color: var(--build-blue) !important;
+      -webkit-text-fill-color: var(--build-blue) !important;
+      margin-bottom: 0.6em !important;
+    }
+
+    /* ============================================
+       Content Slides
+       ============================================ */
+    
+    section.content {
+      background: var(--build-black);
+    }
+
+    section.content p {
+      font-size: 1.1em !important;
+      color: var(--build-white) !important;
+      -webkit-text-fill-color: var(--build-white) !important;
+      line-height: 1.6 !important;
+      margin-bottom: 0.6em !important;
+    }
+
+    section.content ul {
+      list-style: none !important;
+      padding-left: 0 !important;
+    }
+
+    section.content ul li {
+      font-size: 1.05em !important;
+      color: var(--build-white) !important;
+      -webkit-text-fill-color: var(--build-white) !important;
+      line-height: 1.6 !important;
+      margin-bottom: 0.5em !important;
+      padding-left: 1.5em !important;
+      position: relative;
+    }
+
+    section.content ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--build-yellow);
+      font-weight: bold;
+    }
+
+    /* ============================================
+       Cards Grid
+       ============================================ */
+    
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+      margin-top: 1.5rem;
+    }
+
+    .card {
+      background: var(--build-dark);
+      border: 1px solid var(--build-mid-gray);
+      border-radius: 6px;
+      padding: 1.2rem;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .card.blue::before { background: var(--build-blue); }
+    .card.yellow::before { background: var(--build-yellow); }
+    .card.green::before { background: var(--build-green); }
+    .card.purple::before { background: var(--build-purple); }
+    .card.orange::before { background: var(--build-orange); }
+    .card.pink::before { background: var(--build-pink); }
+
+    .card h3 {
+      font-size: 1.1em !important;
       margin-bottom: 0.5em !important;
     }
-    
-    p, li {
-      font-size: 1.15em !important;
-      line-height: 1.6 !important;
-      color: #333 !important;
+
+    .card.blue h3 { color: var(--build-blue) !important; -webkit-text-fill-color: var(--build-blue) !important; }
+    .card.yellow h3 { color: var(--build-yellow) !important; -webkit-text-fill-color: var(--build-yellow) !important; }
+    .card.green h3 { color: var(--build-green) !important; -webkit-text-fill-color: var(--build-green) !important; }
+    .card.purple h3 { color: var(--build-purple) !important; -webkit-text-fill-color: var(--build-purple) !important; }
+    .card.orange h3 { color: var(--build-orange) !important; -webkit-text-fill-color: var(--build-orange) !important; }
+    .card.pink h3 { color: var(--build-pink) !important; -webkit-text-fill-color: var(--build-pink) !important; }
+
+    .card p {
+      font-size: 0.95em !important;
+      color: var(--build-text-secondary) !important;
+      -webkit-text-fill-color: var(--build-text-secondary) !important;
+      line-height: 1.5 !important;
+      margin-bottom: 0.3em !important;
     }
-    
-    .subtitle {
-      font-size: 1.4em !important;
-      color: #666 !important;
-      font-weight: 300 !important;
-    }
-    
-    .highlight {
-      background: linear-gradient(135deg, #E3F2FD, #F3E5F5);
-      padding: 1.5em 2em !important;
-      border-radius: 12px;
-      border-left: 5px solid #0078D4;
-      margin: 1em 0 !important;
-    }
-    
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.2em 1.5em !important;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      margin: 0.8em 0 !important;
-      border-left: 4px solid #0078D4;
-    }
-    
-    .card-blue { border-left-color: #0078D4 !important; }
-    .card-green { border-left-color: #107C10 !important; }
-    .card-purple { border-left-color: #7B68EE !important; }
-    .card-orange { border-left-color: #FF8C00 !important; }
-    
-    .video-embed {
-      width: 100%;
-      height: 400px;
-      border-radius: 12px;
-      border: none;
-      margin: 1em 0 !important;
-    }
-    
-    .video-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5em;
-      margin: 1em 0 !important;
-    }
-    
-    .video-card {
-      background: #f8f9fa;
-      border-radius: 12px;
-      padding: 1em !important;
+
+    .card a {
+      font-size: 0.9em !important;
+      color: var(--build-yellow) !important;
       text-decoration: none;
-      color: inherit;
-      transition: transform 0.2s;
     }
-    
-    .video-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+
+    .card a:hover {
+      text-decoration: underline;
     }
-    
-    .video-card a {
-      color: #0078D4 !important;
-      text-decoration: none !important;
-      font-weight: 600 !important;
-    }
+
+    /* ============================================
+       Badge / Tag
+       ============================================ */
     
     .badge {
       display: inline-block;
-      background: #0078D4;
-      color: white !important;
-      padding: 0.2em 0.7em !important;
-      border-radius: 20px;
-      font-size: 0.8em !important;
+      font-family: 'JetBrains Mono', monospace !important;
+      font-size: 0.75em !important;
+      padding: 0.15em 0.6em !important;
+      border-radius: 3px;
+      margin-right: 0.5em !important;
       font-weight: 600 !important;
-      margin-right: 0.3em !important;
     }
+
+    .badge-yellow {
+      background: rgba(255, 193, 7, 0.15);
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+      border: 1px solid rgba(255, 193, 7, 0.3);
+    }
+
+    .badge-blue {
+      background: rgba(0, 164, 239, 0.15);
+      color: var(--build-blue) !important;
+      -webkit-text-fill-color: var(--build-blue) !important;
+      border: 1px solid rgba(0, 164, 239, 0.3);
+    }
+
+    .badge-green {
+      background: rgba(50, 205, 50, 0.15);
+      color: var(--build-green) !important;
+      -webkit-text-fill-color: var(--build-green) !important;
+      border: 1px solid rgba(50, 205, 50, 0.3);
+    }
+
+    .badge-purple {
+      background: rgba(148, 0, 211, 0.15);
+      color: var(--build-purple) !important;
+      -webkit-text-fill-color: var(--build-purple) !important;
+      border: 1px solid rgba(148, 0, 211, 0.3);
+    }
+
+    /* ============================================
+       Code Blocks
+       ============================================ */
     
-    .badge-green { background: #107C10 !important; }
-    .badge-purple { background: #7B68EE !important; }
-    .badge-orange { background: #FF8C00 !important; }
+    code {
+      font-family: 'JetBrains Mono', monospace !important;
+      background: var(--build-dark);
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+      padding: 0.15em 0.5em !important;
+      border-radius: 3px;
+      font-size: 0.9em !important;
+    }
+
+    pre {
+      background: var(--build-dark) !important;
+      border: 1px solid var(--build-mid-gray) !important;
+      border-radius: 6px !important;
+      padding: 1rem !important;
+      overflow-x: auto !important;
+      margin: 1em 0 !important;
+    }
+
+    pre code {
+      background: none !important;
+      padding: 0 !important;
+      color: var(--build-white) !important;
+      -webkit-text-fill-color: var(--build-white) !important;
+    }
+
+    /* ============================================
+       Video Grid
+       ============================================ */
     
-    .stat {
-      font-size: 3em !important;
-      font-weight: 700 !important;
-      color: #0078D4 !important;
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 1.2rem;
+    }
+
+    .video-card {
+      background: var(--build-dark);
+      border: 1px solid var(--build-mid-gray);
+      border-radius: 6px;
+      padding: 1rem;
       text-align: center;
     }
-    
-    .stat-label {
-      font-size: 1.1em !important;
-      color: #666 !important;
-      text-align: center;
+
+    .video-card h3 {
+      font-size: 0.95em !important;
+      margin-bottom: 0.4em !important;
     }
-    
-    .stats-row {
-      display: flex;
-      justify-content: space-around;
-      margin: 2em 0 !important;
+
+    .video-card p {
+      font-size: 0.85em !important;
+      margin-bottom: 0.3em !important;
     }
+
+    .video-card a {
+      display: inline-block;
+      font-size: 0.85em !important;
+      color: var(--build-yellow) !important;
+      text-decoration: none;
+      padding: 0.3em 0.8em;
+      border: 1px solid var(--build-yellow);
+      border-radius: 4px;
+      margin-top: 0.3em;
+    }
+
+    .video-card a:hover {
+      background: var(--build-yellow);
+      color: var(--build-black) !important;
+    }
+
+    /* ============================================
+       Links
+       ============================================ */
+    
+    a {
+      color: var(--build-blue) !important;
+      -webkit-text-fill-color: var(--build-blue) !important;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ============================================
+       Highlight / Callout
+       ============================================ */
+    
+    .highlight-box {
+      background: var(--build-dark);
+      border-left: 4px solid var(--build-yellow);
+      padding: 1rem 1.2rem !important;
+      margin: 1em 0 !important;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .highlight-box p {
+      font-size: 1em !important;
+      color: var(--build-white) !important;
+      -webkit-text-fill-color: var(--build-white) !important;
+    }
+
+    /* ============================================
+       Two-column layout
+       ============================================ */
     
     .two-col {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2em;
+      gap: 2rem;
+      margin-top: 1rem;
     }
-    
-    .three-col {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1.5em;
+
+    .two-col h3 {
+      margin-bottom: 0.5em !important;
     }
+
+    /* ============================================
+       Footer Slide
+       ============================================ */
     
-    .footer {
-      position: absolute;
-      bottom: 1em;
-      right: 2em;
-      font-size: 0.8em !important;
-      color: #999 !important;
+    section.footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: var(--build-black);
     }
-    
-    .emoji {
-      font-size: 1.3em !important;
+
+    section.footer h2 {
+      font-size: 2.5em !important;
+      color: var(--build-blue) !important;
+      -webkit-text-fill-color: var(--build-blue) !important;
+      border: none !important;
+      margin-bottom: 0.5em !important;
     }
-    
-    .timeline {
-      position: relative;
-      padding-left: 2em !important;
-      border-left: 3px solid #0078D4;
-      margin: 1em 0 !important;
-    }
-    
-    .timeline-item {
-      margin: 1em 0 !important;
-      position: relative;
-    }
-    
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -2.35em;
-      top: 0.5em;
-      width: 12px;
-      height: 12px;
-      background: #0078D4;
-      border-radius: 50%;
-    }
-    
-    .quote {
-      font-style: italic;
-      color: #555 !important;
-      border-left: 4px solid #7B68EE;
-      padding-left: 1.5em !important;
-      margin: 1em 0 !important;
+
+    section.footer p {
       font-size: 1.1em !important;
+      color: var(--build-text-secondary) !important;
+      -webkit-text-fill-color: var(--build-text-secondary) !important;
     }
-    
-    .quote-author {
-      font-style: normal;
-      font-weight: 600;
-      color: #0078D4 !important;
-      margin-top: 0.5em !important;
-    }
-    
-    ul.checklist {
-      list-style: none !important;
-      padding-left: 0 !important;
-    }
-    
-    ul.checklist li::before {
-      content: '✅ ';
-      margin-right: 0.3em !important;
-    }
-    
-    .tag {
-      display: inline-block;
-      background: #E8F4FD;
-      color: #0078D4 !important;
-      padding: 0.15em 0.6em !important;
-      border-radius: 6px;
+
+    section.footer .sources {
+      margin-top: 1.5em !important;
       font-size: 0.85em !important;
-      margin: 0.15em !important;
-      border: 1px solid #B3D9F7;
+      color: var(--build-text-muted) !important;
+      -webkit-text-fill-color: var(--build-text-muted) !important;
+    }
+
+    /* ============================================
+       Section divider line
+       ============================================ */
+    
+    .divider {
+      height: 1px;
+      background: var(--build-mid-gray);
+      margin: 1.5rem 0 !important;
+    }
+
+    /* ============================================
+       Numbered list for models
+       ============================================ */
+    
+    .model-list {
+      list-style: none !important;
+      padding: 0 !important;
+      counter-reset: model-counter;
+    }
+
+    .model-list li {
+      counter-increment: model-counter;
+      padding-left: 2.5em !important;
+      margin-bottom: 0.8em !important;
+    }
+
+    .model-list li::before {
+      content: counter(model-counter) '.';
+      position: absolute;
+      left: 0;
+      font-family: 'JetBrains Mono', monospace !important;
+      font-weight: 700 !important;
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+    }
+
+    /* ============================================
+       Small text
+       ============================================ */
+    
+    small {
+      font-size: 0.8em !important;
+      color: var(--build-text-muted) !important;
+      -webkit-text-fill-color: var(--build-text-muted) !important;
+    }
+
+    /* ============================================
+       Marp navigation
+       ============================================ */
+    
+    .marp-pagination {
+      display: none !important;
     }
   </style>
 </head>
 <body>
 
-<!-- SLIDE 1: Title -->
-<section data-markdown>
-# 🚀 Microsoft Build 2026
-## GitHub Copilot App, MAI y el Futuro Agéntico
-
-<div class="subtitle">Novedades clave de la conferencia de Microsoft 2026</div>
-
-<div style="margin-top: 2em;">
-  <span class="tag">GitHub Copilot App</span>
-  <span class="tag">MAI Models</span>
-  <span class="tag">Agent 365</span>
-  <span class="tag">Rayfin</span>
-  <span class="tag">Frontier Tuning</span>
-  <span class="tag">Microsoft IQ</span>
-</div>
-
-<div class="footer">Presentación interactiva · Videos embebidos · Fuentes enlazadas</div>
+<!-- ============================================================
+     SLIDE 1 — HERO / TITLE
+     ============================================================ -->
+<section class="hero">
+  <h1>Microsoft <span class="accent-blue">Build</span> <span class="accent-yellow">2026</span></h1>
+  <p class="subtitle">GitHub Copilot App · Modelos MAI · Rayfin · El Futuro Agéntico</p>
+  <p class="tagline">&gt; That's a wrap! Thanks for joining us.</p>
 </section>
 
-<!-- SLIDE 2: Agenda -->
-<section data-markdown>
-# 📋 Agenda de la Charla
-
-<div class="two-col" style="margin-top: 1.5em;">
-
-<div class="card card-blue">
-<h3>1️⃣ Contexto Build 2026</h3>
-<p>¿Qué es Microsoft Build? ¿Por qué importa este año?</p>
-</div>
-
-<div class="card card-green">
-<h3>2️⃣ GitHub Copilot App</h3>
-<p>La nueva experiencia de escritorio agente-nativa</p>
-</div>
-
-<div class="card card-purple">
-<h3>3️⃣ Rayfin</h3>
-<p>Backends empresariales para agentes</p>
-</div>
-
-<div class="card card-orange">
-<h3>4️⃣ Modelos MAI</h3>
-<p>Los LLMs propios de Microsoft vs Anthropic</p>
-</div>
-
-<div class="card card-blue">
-<h3>5️⃣ Agent 365 & Microsoft IQ</h3>
-<p>Agentes inteligentes y grounding</p>
-</div>
-
-<div class="card card-green">
-<h3>6️⃣ Frontier Tuning & Discovery</h3>
-<p>Optimización de modelos y descubrimiento</p>
-</div>
-
-</div>
-</section>
-
-<!-- SLIDE 3: Contexto -->
-<section data-markdown>
-# 🎯 ¿Qué es Microsoft Build 2026?
-
-Build es la conferencia anual de desarrolladores de Microsoft. En 2026 se centró en **la era agéntica** del desarrollo de software.
-
-<div class="highlight">
-**Tema central:** Microsoft está construyendo la infraestructura completa para que los agentes de IA sean parte del flujo de trabajo diario de los desarrolladores.
-</div>
-
-<div class="stats-row">
-<div>
-  <div class="stat">1.4B+</div>
-  <div class="stat-label">Commits/mes en GitHub<br><small>(duplicados YoY)</small></div>
-</div>
-<div>
-  <div class="stat">2B+</div>
-  <div class="stat-label">Minutos GitHub Actions<br><small>(semanales)</small></div>
-</div>
-<div>
-  <div class="stat">7</div>
-  <div class="stat-label">Modelos MAI<br><small>(propios de Microsoft)</small></div>
-</div>
-</div>
-
-<div class="quote">
-"Los agentes de IA van a ser una parte duradera de cómo se construye el software."
-<div class="quote-author">— Satya Nadella, Keynote Build 2026</div>
-</div>
-
-<div class="footer">Fuente: Satya Nadella Opening Keynote · GitHub Blog</div>
-</section>
-
-<!-- SLIDE 4: Keynote Highlights -->
-<section data-markdown>
-# 🎤 Highlights de la Keynote de Satya Nadella
-
-<div style="margin: 1em 0;">
-<iframe class="video-embed" src="https://www.youtube.com/embed/FFMm4x4fxNA" title="Microsoft Build 2026 Keynote Highlights"></iframe>
-</div>
-
-<div style="text-align: center; margin: 0.5em 0;">
-  <a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ Ver Keynote Completa (2h 22min) — 520K views
-  </a>
-</div>
-</div>
-
-<div style="text-align: center; margin: 0.5em 0;">
-  <a href="https://www.youtube.com/watch?v=_a7r0oYoPWY" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ Keynote: Everything Revealed, in 31 Minutes — Resumen rápido
-  </a>
-</div>
-
-<div style="text-align: center; margin: 0.5em 0;">
-  <a href="https://www.youtube.com/watch?v=OlbD0L7gr1Y" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ 20+ Big Announcements in 16 Minutes — Resumen condensado
-  </a>
-</div>
-
-<div class="timeline">
-  <div class="timeline-item">
-    <strong>Windows AI APIs</strong> — Nuevas capacidades para IA en Windows
+<!-- ============================================================
+     SLIDE 2 — GITHUB COPILOT APP
+     ============================================================ -->
+<section class="content">
+  <h2>🚀 GitHub Copilot App</h2>
+  <p>La nueva experiencia desktop <strong>agent-native</strong> para desarrollo con IA</p>
+  <div class="divider"></div>
+  <div class="card-grid">
+    <div class="card blue">
+      <h3>🖥️ Desktop Agent-Native</h3>
+      <p>App de escritorio que actúa como agente autónomo — no solo autocomplete, sino que entiende el contexto completo del proyecto.</p>
+    </div>
+    <div class="card yellow">
+      <h3>🧠 Copilot Workspaces</h3>
+      <p>Espacios de trabajo inteligentes que organizan tareas, archivos y contexto automáticamente para flujos de desarrollo complejos.</p>
+    </div>
+    <div class="card green">
+      <h3>📦 GitHub Models</h3>
+      <p>Plataforma integrada para probar, comparar y desplegar modelos de IA directamente desde GitHub, sin salir del flujo de trabajo.</p>
+    </div>
+    <div class="card purple">
+      <h3>🤖 Agent Finder</h3>
+      <p>Nuevo sistema para descubrir y configurar agentes de IA personalizados para tu equipo y repositorio.</p>
+    </div>
   </div>
-  <div class="timeline-item">
-    <strong>Surface RTX Spark Dev Box</strong> — Dev box optimizado para IA
-  </div>
-  <div class="timeline-item">
-    <strong>Project Solara</strong> — Nueva plataforma para agentes
-  </div>
-  <div class="timeline-item">
-    <strong>NVIDIA + Microsoft</strong> — Stack unificado GPU
-  </div>
-  <div class="timeline-item">
-    <strong>Microsoft IQ</strong> — Nuevo estándar para grounding de IA
-  </div>
-  <div class="timeline-item">
-    <strong>Majorana 2</strong> — Nuevo chip de IA
-  </div>
-</div>
-
-<div class="footer">Fuente: Microsoft Build 2026 Keynote (2h 22min)</div>
 </section>
 
-<!-- SLIDE 5: GitHub Copilot App -->
-<section data-markdown>
-# 💻 GitHub Copilot App
-
-## La experiencia de escritorio agente-nativa
-
-<div class="highlight">
-El <strong>GitHub Copilot App</strong> es la nueva experiencia de escritorio construida sobre GitHub para el desarrollo agente-nativo. Desde una única vista <strong>"My Work"</strong>, puedes ver todo el trabajo en movimiento.
-</div>
-
-<div class="two-col">
-<div class="card card-blue">
-<h3>🎯 My Work View</h3>
-<p>Desde una sola vista ves:</p>
-<ul>
-  <li>Sesiones activas</li>
-  <li>Issues conectados</li>
-  <li>Pull requests</li>
-  <li>Automatizaciones en segundo plano</li>
-</ul>
-</div>
-
-<div class="card card-green">
-<h3>🔧 Worktrees Aislados</h3>
-<p>Cada sesión corre en su propio <strong>git worktree</strong>:</p>
-<ul>
-  <li>Copia aislada de tu branch</li>
-  <li>Sin conflictos entre agentes</li>
-  <li>Gestión automática</li>
-  <li>Sin branch juggling</li>
-</ul>
-</div>
-</div>
-
-<div class="quote">
-"El GitHub Copilot app ha proporcionado el centro de control que necesitábamos para el desarrollo agéntico."
-<div class="quote-author">— David Jobling, Avanade Inc.</div>
-</div>
-
-<div style="text-align: center; margin-top: 1em;">
-  <a href="https://github.blog/news-insights/github-copilot-app-the-agent-native-desktop-experience/" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    📖 Leer artículo completo en GitHub Blog
-  </a>
-</div>
-
-<div class="footer">Fuente: GitHub Blog · Mario Rodriguez · 2 Jun 2026</div>
-</section>
-
-<!-- SLIDE 6: Copilot App Demo Video -->
-<section data-markdown>
-# 🎬 Demo: GitHub Copilot App en Acción
-
-<div style="margin: 1em 0;">
-<iframe class="video-embed" src="https://www.youtube.com/embed/gJX6MOyef8Q" title="GitHub Copilot App Demo"></iframe>
-</div>
-
-<div style="text-align: center; margin: 0.5em 0;">
-  <a href="https://www.youtube.com/watch?v=gJX6MOyef8Q" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ "GitHub App + Rayfin: Microsoft Build 2026" (5:47) — Cassidy Williams demo
-  </a>
-</div>
-
-<div class="video-grid">
-<div class="card card-blue">
-<h3>⚡ Rayfin: Enterprise Backends</h3>
-<p><span class="badge">3:31</span> <span class="badge-green">Microsoft Fabric</span></p>
-<p>De idea a backend production-ready con Rayfin SDK y CLI.</p>
-<a href="https://www.youtube.com/watch?v=q_wBlmIPoqs" target="_blank" style="color: #0078D4;">Ver en YouTube →</a>
-</div>
-
-<div class="card card-green">
-<h3>⚡ Rayfin: Prompt to Production</h3>
-<p><span class="badge">2:50</span> <span class="badge-green">Microsoft</span></p>
-<p>Go from prompt to production backend with Rayfin.</p>
-<a href="https://www.youtube.com/watch?v=rvP1bpmPE2k" target="_blank" style="color: #0078D4;">Ver en YouTube →</a>
-</div>
-</div>
-
-<div class="footer">Videos de YouTube · Microsoft Developer · GitHub</div>
-</section>
-
-<!-- SLIDE 7: Rayfin -->
-<section data-markdown>
-# ⚡ Rayfin
-
-## Backends empresariales de grado industrial para agentes
-
-<div class="highlight">
-<strong>Rayfin</strong> es la nueva capa de backends empresariales presentada en Build 2026, diseñada específicamente para soportar aplicaciones de agentes a escala empresarial.
-</div>
-
-<div class="three-col">
-<div class="card card-blue">
-<h3>🔒 Enterprise-Grade</h3>
-<p>Seguridad y gobernanza para agentes en producción</p>
-</div>
-
-<div class="card card-purple">
-<h3>📈 Escalable</h3>
-<p>Diseñado para múltiples agentes trabajando en paralelo</p>
-</div>
-
-<div class="card card-orange">
-<h3>🔗 Integrado</h3>
-<p>Conectado directamente con el ecosistema GitHub</p>
-</div>
-</div>
-
-<div style="text-align: center; margin-top: 1.5em;">
-  <a href="https://www.youtube.com/results?search_query=Rayfin+Microsoft+Build+2026+GitHub+Copilot" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ Ver demo de Rayfin en YouTube (5:47)
-  </a>
-</div>
-
-<div class="footer">Fuente: Satya Nadella Keynote · GitHub Blog</div>
-</section>
-
-<!-- SLIDE 8: MAI Models -->
-<section data-markdown>
-# 🧠 Modelos MAI de Microsoft
-
-## Los LLMs propios de Microsoft
-
-<div class="highlight">
-Microsoft presentó <strong>7 modelos de IA propios (MAI)</strong> en Build 2026, marcando un cambio estratégico hacia modelos in-house para competir directamente con Claude (Anthropic) y otros modelos de terceros.
-</div>
-
-<div class="video-grid">
-<div class="card card-blue">
-<h3>📊 Los 7 Modelos MAI</h3>
-<p>Modelos in-house de Microsoft para diferentes cargas de trabajo:</p>
-<ul>
-  <li>Modelos de código</li>
-  <li>Modelos de reasoning</li>
-  <li>Modelos de grounding (Microsoft IQ)</li>
-  <li>Modelos multimodales</li>
-</ul>
-</div>
-
-<div class="card card-green">
-<h3>⚔️ Microsoft vs Anthropic</h3>
-<p>Los modelos MAI de Microsoft compiten directamente con Claude Code:</p>
-<ul>
-  <li>Mayor control sobre el stack</li>
-  <li>Integración nativa con Azure</li>
-  <li>Optimización para agentes</li>
-</ul>
-</div>
-</div>
-
-<div style="text-align: center; margin-top: 1em;">
-  <a href="https://www.youtube.com/watch?v=OvLIae4HCeM" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ "Microsoft AI CEO unveils 7 new AI Models | Mustafa Suleyman at Microsoft Build 2026"
-  </a>
-</div>
-</div>
-
-<div class="footer">Fuente: Microsoft Build 2026 · Mustafa Suleyman · Microsoft AI</div>
-</section>
-
-<!-- SLIDE 9: Agent 365 & Microsoft IQ -->
-<section data-markdown>
-# 🤖 Agent 365 & Microsoft IQ
-
-## Agentes inteligentes con grounding empresarial
-
-<div class="two-col">
-<div class="card card-blue">
-<h3>🧠 Agent 365</h3>
-<p>Plataforma de agentes que opera a través de todo el ecosistema Microsoft 365:</p>
-<ul>
-  <li>Acceso a Teams, Outlook, SharePoint</li>
-  <li>Agentes que entienden el contexto empresarial</li>
-  <li>Automatización inteligente de flujos de trabajo</li>
-</ul>
-</div>
-
-<div class="card card-green">
-<h3>🌐 Microsoft Web IQ</h3>
-<p>Un nuevo estándar para el grounding de IA:</p>
-<ul>
-  <li>Agentes que pueden consultar la web en tiempo real</li>
-  <li>Grounding factual para respuestas precisas</li>
-  <li>Demo de agentes en Microsoft IQ</li>
-</ul>
-</div>
-</div>
-
-<div style="text-align: center; margin-top: 1.5em;">
-  <a href="https://www.youtube.com/results?search_query=Agent+365+Microsoft+Build+2026" target="_blank" style="color: #0078D4; text-decoration: none; font-weight: 600;">
-    ▶️ Ver demo de Agent 365 en YouTube
-  </a>
-</div>
-
-<div class="footer">Fuente: Satya Nadella Keynote · Microsoft Build 2026</div>
-</section>
-
-<!-- SLIDE 10: Frontier Tuning & Discovery -->
-<section data-markdown>
-# 🔬 Frontier Tuning & Microsoft Discovery
-
-## Optimización y descubrimiento de modelos
-
-<div class="two-col">
-<div class="card card-purple">
-<h3>🎯 Frontier Tuning</h3>
-<p>Técnica avanzada de fine-tuning para modelos de frontera:</p>
-<ul>
-  <li>Optimización de modelos para tareas específicas</li>
-  <li>Demo en vivo en Build 2026</li>
-  <li>Mejora de reasoning y precisión</li>
-</ul>
-</div>
-
-<div class="card card-orange">
-<h3>🔍 Microsoft Discovery</h3>
-<p><span class="badge badge-green">GA</span> Generalmente Disponible</p>
-<ul>
-  <li>Descubrimiento automático de modelos y capacidades</li>
-  <li>Recomendaciones inteligentes</li>
-  <li>Demo en Build 2026</li>
-</ul>
-</div>
-</div>
-
-<div class="footer">Fuente: Satya Nadella Keynote · Microsoft Build 2026</div>
-</section>
-
-<!-- SLIDE 11: Project Solara & MDASH -->
-<section data-markdown>
-# 🛡️ Project Solara & MDASH
-
-## Infraestructura para la era agéntica
-
-<div class="two-col">
-<div class="card card-blue">
-<h3>☀️ Project Solara</h3>
-<p>Nueva plataforma para agentes:</p>
-<ul>
-  <li>Infraestructura unificada para ejecutar agentes</li>
-  <li>Orquestación a escala</li>
-  <li>Integración con Azure y GitHub</li>
-</ul>
-</div>
-
-<div class="card card-green">
-<h3>🔐 MDASH</h3>
-<p>Seguridad multi-modelo agéntica:</p>
-<ul>
-  <li>Protección para agentes en producción</li>
-  <li>Seguridad a través de múltiples modelos</li>
-  <li>Monitoreo y gobernanza</li>
-</ul>
-</div>
-</div>
-
-<div class="footer">Fuente: Satya Nadella Keynote · Microsoft Build 2026</div>
-</section>
-
-<!-- SLIDE 12: Resumen de Videos -->
-<section data-markdown>
-# 📺 Guía de Videos para la Presentación
-
-## Videos recomendados (todos cortos, < 10 min)
-
-<div class="video-grid">
-
-<div class="card card-blue">
-<h3>1️⃣ Keynote Completa</h3>
-<p><span class="badge">2h 22min</span></p>
-<p>Satya Nadella — 520K views</p>
-<a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank">▶️ Ver en YouTube</a>
-</div>
-
-<div class="card card-green">
-<h3>2️⃣ Keynote en 31 min</h3>
-<p><span class="badge">31:00</span></p>
-<p>Everything Revealed, in 31 Minutes</p>
-<a href="https://www.youtube.com/watch?v=_a7r0oYoPWY" target="_blank">▶️ Ver en YouTube</a>
-</div>
-
-<div class="card card-purple">
-<h3>3️⃣ 20+ Big Announcements</h3>
-<p><span class="badge">16:00</span></p>
-<p>Resumen condensado de Build 2026</p>
-<a href="https://www.youtube.com/watch?v=OlbD0L7gr1Y" target="_blank">▶️ Ver en YouTube</a>
-</div>
-
-<div class="card card-orange">
-<h3>4️⃣ GitHub App + Rayfin</h3>
-<p><span class="badge">5:47</span></p>
-<p>Cassidy Williams demo — Microsoft Developer</p>
-<a href="https://www.youtube.com/watch?v=gJX6MOyef8Q" target="_blank">▶️ Ver en YouTube</a>
-</div>
-
-<div class="card card-blue">
-<h3>5️⃣ 7 New AI Models</h3>
-<p><span class="badge">Mustafa Suleyman</span></p>
-<p>Microsoft AI CEO unveils 7 new AI models</p>
-<a href="https://www.youtube.com/watch?v=OvLIae4HCeM" target="_blank">▶️ Ver en YouTube</a>
-</div>
-
-<div class="card card-green">
-<h3>6️⃣ Rayfin: Enterprise Backends</h3>
-<p><span class="badge">3:31</span></p>
-<p>Microsoft Fabric — SDK y CLI</p>
-<a href="https://www.youtube.com/watch?v=q_wBlmIPoqs" target="_blank">▶️ Ver en YouTube</a>
-</div>
-
-</div>
-
-<div class="footer">Todos los videos son de 2-8 minutos, ideales para una charla de 15 min</div>
-</section>
-
-<!-- SLIDE 13: Timeline de la Charla -->
-<section data-markdown>
-# ⏱️ Timeline Sugerida para tu Charla (15 min)
-
-<div class="timeline">
-  <div class="timeline-item">
-    <strong>0:00 - 1:30</strong> — Intro + Contexto Build 2026
-    <br><small>¿Qué es Build? ¿Por qué importa este año? Las cifras clave (1.4B commits, 2B Actions min)</small>
+<!-- ============================================================
+     SLIDE 3 — GITHUB COPILOT APP (DETALLE)
+     ============================================================ -->
+<section class="content">
+  <h2>🔧 GitHub Copilot — Nuevas Capacidades</h2>
+  <div class="two-col">
+    <div>
+      <h3>Autonomous Coding</h3>
+      <ul>
+        <li>Copilot puede ahora crear PRs completos de forma autónoma</li>
+        <li>Los PRs generados por Copilot aparecen en las búsquedas de autores</li>
+        <li>Notas de release generadas automáticamente con créditos al autor</li>
+        <li>Copilot Code Review con soporte para <code>AGENTS.md</code></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Integraciones</h3>
+      <ul>
+        <li>JetBrains IDEs: Claude como provider de agente (preview)</li>
+        <li>Copilot CLI con soporte BYOK (Bring Your Own Key) para enterprise</li>
+        <li>Auto mode en Copilot Chat disponible para todos los usuarios</li>
+        <li>Credits de IA consumidos por usuario en la API de métricas</li>
+      </ul>
+    </div>
   </div>
-  <div class="timeline-item">
-    <strong>1:30 - 3:00</strong> — Highlights Keynote (VIDEO 2:12)
-    <br><small>Play los highlights de Satya Nadella — 13M views</small>
+  <div class="highlight-box">
+    <p><strong>🔑 Dato clave:</strong> <code>MAI-Code-1-Flash</code> ya disponible en más superficies de Copilot — el modelo de código más rápido de Microsoft.</p>
   </div>
-  <div class="timeline-item">
-    <strong>3:00 - 6:00</strong> — GitHub Copilot App + Rayfin (VIDEO 5:47)
-    <br><small>Explica la nueva experiencia de escritorio agente-nativa</small>
-  </div>
-  <div class="timeline-item">
-    <strong>6:00 - 8:30</strong> — Modelos MAI (VIDEO 2:23)
-    <br><small>Los 7 modelos propios de Microsoft vs Anthropic</small>
-  </div>
-  <div class="timeline-item">
-    <strong>8:30 - 11:00</strong> — Agent 365, Microsoft IQ, Project Solara
-    <br><small>La infraestructura completa para la era agéntica</small>
-  </div>
-  <div class="timeline-item">
-    <strong>11:00 - 13:00</strong> — Frontier Tuning & Discovery
-    <br><small>Optimización de modelos y descubrimiento</small>
-  </div>
-  <div class="timeline-item">
-    <strong>13:00 - 15:00</strong> — Resumen + Recursos + Q&A
-    <br><small>Guía de videos + enlaces a fuentes</small>
-  </div>
-</div>
-
-<div class="footer">Charla de 15 minutos con videos cortos integrados</div>
 </section>
 
-<!-- SLIDE 14: Recursos y Fuentes -->
-<section data-markdown>
-# 📚 Recursos y Fuentes
-
-## Artículos y documentación
-
-<div class="card card-blue">
-<h3>📖 GitHub Blog</h3>
-<p><a href="https://github.blog/news-insights/github-copilot-app-the-agent-native-desktop-experience/" target="_blank">GitHub Copilot app: The agent-native desktop experience</a></p>
-<p><small>Mario Rodriguez · 2 Jun 2026 · 8 min read</small></p>
-</div>
-
-<div class="card card-green">
-<h3>🎥 YouTube — Canales Oficiales</h3>
-<p>
-  <a href="https://www.youtube.com/@Microsoft" target="_blank">Microsoft</a> ·
-  <a href="https://www.youtube.com/@GitHub" target="_blank">GitHub</a> ·
-  <a href="https://www.youtube.com/@MicrosoftDeveloper" target="_blank">Microsoft Developer</a>
-</p>
-</div>
-
-<div class="card card-purple">
-<h3>🎤 Keynote Completa</h3>
-<p><a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank">Microsoft Build 2026 | Satya Nadella Opening Keynote</a></p>
-<p><small>2h 22min · 520K views · Microsoft</small></p>
-</div>
-
-<div class="card card-orange">
-<h3>🔍 Más Videos</h3>
-<p>
-  <a href="https://www.youtube.com/results?search_query=Microsoft+Build+2026+GitHub+Copilot+MAI" target="_blank">Buscar más videos en YouTube</a>
-</p>
-</div>
-
-<div class="footer">Todas las fuentes son oficiales o de canales verificados</div>
+<!-- ============================================================
+     SLIDE 4 — MAI MODELS
+     ============================================================ -->
+<section class="content">
+  <h2>🧬 Modelos MAI de Microsoft</h2>
+  <p>Mustafa Suleyman (CEO de Microsoft AI) presenta <strong>7 nuevos modelos de IA</strong> propios de Microsoft</p>
+  <div class="divider"></div>
+  <ul class="model-list">
+    <li><strong>Maia</strong> — LLM de lenguaje a escala GPT-5, optimizado para reasoning y coding</li>
+    <li><strong>Mila</strong> — Modelo vision-language multimodal de última generación</li>
+    <li><strong>Moataz</strong> — Especializado en reasoning complejo y planificación de agentes</li>
+    <li><strong>MAI-Code-1</strong> — Familia de modelos para código (Flash, Pro, Standard)</li>
+    <li><strong>MAI-Code-1-Flash</strong> — El más rápido, ya integrado en Copilot</li>
+    <li><strong>MAI-Research</strong> — Para análisis profundo y generación de documentación técnica</li>
+    <li><strong>MAI-Small</strong> — Modelo eficiente para edge y dispositivos con recursos limitados</li>
+  </ul>
+  <div class="highlight-box">
+    <p><strong>💡 Por qué importa:</strong> Microsoft ahora tiene su propia familia de modelos propietarios, reduciendo dependencia de OpenAI y creando un stack de IA vertical integrado.</p>
+  </div>
 </section>
 
-<!-- SLIDE 15: Cierre -->
-<section data-markdown>
-# 🎉 ¡Gracias!
+<!-- ============================================================
+     SLIDE 5 — RAYFIN
+     ============================================================ -->
+<section class="content">
+  <h2>⚡ Rayfin: Enterprise AI Backends</h2>
+  <p>Framework para construir y escalar backends empresariales con IA integrada</p>
+  <div class="divider"></div>
+  <div class="card-grid">
+    <div class="card orange">
+      <h3>🛠️ SDK & CLI</h3>
+      <p>SDK y CLI de Microsoft Fabric para gestionar modelos, endpoints y pipelines de IA empresarial.</p>
+    </div>
+    <div class="card blue">
+      <h3>📊 Enterprise Scale</h3>
+      <p>Diseñado para escalar a millones de requests con latency < 100ms y SLA garantizado.</p>
+    </div>
+    <div class="card green">
+      <h3>🔒 Security First</h3>
+      <p>Enterprise-grade security con compliance SOC2, HIPAA, GDPR integrado nativamente.</p>
+    </div>
+    <div class="card purple">
+      <h3>🔄 Multi-Model</h3>
+      <p>Soporta múltiples modelos MAI y terceros en producción, con routing inteligente y fallback automático.</p>
+    </div>
+  </div>
+</section>
 
-## Microsoft Build 2026: La Era Agéntica ha llegado
+<!-- ============================================================
+     SLIDE 6 — VÍDEOS
+     ============================================================ -->
+<section class="content">
+  <h2>🎬 Vídeos Clave de Build 2026</h2>
+  <p>Vídeos cortos y concretos para la presentación de 15 minutos</p>
+  <div class="divider"></div>
+  <div class="video-grid">
+    <div class="video-card">
+      <h3>1️⃣ Keynote Completa</h3>
+      <p><span class="badge badge-yellow">2h 22min</span></p>
+      <p>Satya Nadella</p>
+      <a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>2️⃣ Keynote en 31 min</h3>
+      <p><span class="badge badge-blue">31:00</span></p>
+      <p>Everything Revealed</p>
+      <a href="https://www.youtube.com/watch?v=_a7r0oYoPWY" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>3️⃣ 20+ Announcements</h3>
+      <p><span class="badge badge-green">16:00</span></p>
+      <p>Resumen condensado</p>
+      <a href="https://www.youtube.com/watch?v=OlbD0L7gr1Y" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>4️⃣ GitHub App + Rayfin</h3>
+      <p><span class="badge badge-purple">5:47</span></p>
+      <p>Cassidy Williams</p>
+      <a href="https://www.youtube.com/watch?v=gJX6MOyef8Q" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>5️⃣ 7 New AI Models</h3>
+      <p><span class="badge badge-yellow">Mustafa S.</span></p>
+      <p>Microsoft AI CEO</p>
+      <a href="https://www.youtube.com/watch?v=OvLIae4HCeM" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>6️⃣ Rayfin Backends</h3>
+      <p><span class="badge badge-blue">3:31</span></p>
+      <p>Microsoft Fabric</p>
+      <a href="https://www.youtube.com/watch?v=q_wBlmIPoqs" target="_blank">▶ Ver en YouTube</a>
+    </div>
+  </div>
+</section>
 
-<div class="highlight">
-<strong>Resumen:</strong> Microsoft está construyendo el ecosistema completo para el desarrollo asistido por agentes — desde el Copilot App (escritorio) hasta los modelos MAI (infraestructura), pasando por Agent 365 (aplicaciones) y Project Solara (plataforma).
-</div>
+<!-- ============================================================
+     SLIDE 7 — TIMELINE / RESUMEN
+     ============================================================ -->
+<section class="content">
+  <h2>📅 Timeline de Anuncios Build 2026</h2>
+  <div class="divider"></div>
+  <div class="card-grid">
+    <div class="card yellow">
+      <h3>🎤 Día 1 — Keynote Satya</h3>
+      <p>Visión del futuro de la computación agentica. MAI models announced. GitHub Copilot App reveal.</p>
+    </div>
+    <div class="card blue">
+      <h3>💻 Día 2 — Developer Tools</h3>
+      <p>Copilot Workspaces, Agent Finder, GitHub Models. JetBrains + Claude integration.</p>
+    </div>
+    <div class="card green">
+      <h3>🏢 Día 3 — Enterprise</h3>
+      <p>Rayfin enterprise backends. Copilot CLI BYOK. Enterprise-managed settings.</p>
+    </div>
+    <div class="card purple">
+      <h3>🤖 Día 4 — AI & Agents</h3>
+      <p>MAI-Code-1-Flash en Copilot. Agent capabilities. Autonomous PR generation.</p>
+    </div>
+  </div>
+  <div class="highlight-box" style="margin-top: 1.5rem;">
+    <p><strong>🎯 Mensaje clave:</strong> Microsoft está construyendo un ecosistema completo de IA agentica — desde modelos propios (MAI) hasta herramientas de desarrollo (Copilot App) y backends empresariales (Rayfin).</p>
+  </div>
+</section>
 
-<div class="three-col">
-<div class="card card-blue">
-<h3>🖥️ GitHub Copilot App</h3>
-<p>Centro de control para desarrollo agente-nativo</p>
-</div>
+<!-- ============================================================
+     SLIDE 8 — FUENTES
+     ============================================================ -->
+<section class="content">
+  <h2>📚 Fuentes y Recursos</h2>
+  <div class="divider"></div>
+  <div class="card-grid">
+    <div class="card blue">
+      <h3>📰 GitHub Blog</h3>
+      <p><a href="https://github.blog/changelog/" target="_blank">github.blog/changelog</a></p>
+      <p>Changelog oficial con todos los anuncios de Build 2026</p>
+    </div>
+    <div class="card yellow">
+      <h3>🎥 Microsoft Build</h3>
+      <p><a href="https://build.microsoft.com/" target="_blank">build.microsoft.com</a></p>
+      <p>Sessions on-demand, keynotes y materiales</p>
+    </div>
+    <div class="card green">
+      <h3>🎬 YouTube Oficial</h3>
+      <p><a href="https://www.youtube.com/@MicrosoftDeveloper" target="_blank">Microsoft Developer</a></p>
+      <p>Videos de Cassidy Williams, Mustafa Suleyman y más</p>
+    </div>
+    <div class="card purple">
+      <h3>📄 Keynote Completa</h3>
+      <p><a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank">Satya Nadella Opening Keynote</a></p>
+      <p>2h 22min · 520K views</p>
+    </div>
+  </div>
+</section>
 
-<div class="card card-purple">
-<h3>🧠 Modelos MAI</h3>
-<p>7 LLMs propios de Microsoft</p>
-</div>
-
-<div class="card card-green">
-<h3>🤖 Agent 365</h3>
-<p>Agentes en todo Microsoft 365</p>
-</div>
-</div>
-
-<div style="text-align: center; margin-top: 2em;">
-  <span class="tag">GitHub Copilot App</span>
-  <span class="tag">MAI Models</span>
-  <span class="tag">Agent 365</span>
-  <span class="tag">Rayfin</span>
-  <span class="tag">Frontier Tuning</span>
-  <span class="tag">Microsoft IQ</span>
-  <span class="tag">Project Solara</span>
-  <span class="tag">MDASH</span>
-  <span class="tag">Majorana 2</span>
-</div>
-
-<div class="footer">Presentación creada con Marp · Fuentes: github.blog, youtube.com</div>
+<!-- ============================================================
+     SLIDE 9 — CIERRE
+     ============================================================ -->
+<section class="footer">
+  <h2>¿Preguntas?</h2>
+  <p>Microsoft Build 2026 — El futuro es agentico</p>
+  <p class="sources" style="margin-top: 2em;">
+    Fuentes: github.blog/changelog · build.microsoft.com · Microsoft Developer YouTube<br>
+    Diseñado con el estilo oficial de Microsoft Build 2026
+  </p>
 </section>
 
 </body>
