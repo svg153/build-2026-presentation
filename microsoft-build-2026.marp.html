@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Microsoft Build 2026 — GitHub Copilot, MAI y el Futuro Agéntico</title>
+  <title>Microsoft Build 2026 — GitHub Copilot, MAI & El Futuro Agéntico</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@marp-team/marp-core@3/dist/marp.min.css">
   <style>
     /* ============================================
@@ -453,6 +453,56 @@
     }
 
     /* ============================================
+       Three-column layout
+       ============================================ */
+    
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .three-col h3 {
+      margin-bottom: 0.5em !important;
+    }
+
+    /* ============================================
+       Metrics / Stats
+       ============================================ */
+    
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .metric-card {
+      background: var(--build-dark);
+      border: 1px solid var(--build-mid-gray);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .metric-card .number {
+      font-family: 'JetBrains Mono', monospace !important;
+      font-size: 2.5em !important;
+      font-weight: 700 !important;
+      color: var(--build-yellow) !important;
+      -webkit-text-fill-color: var(--build-yellow) !important;
+      display: block;
+      margin-bottom: 0.3em !important;
+    }
+
+    .metric-card .label {
+      font-size: 0.95em !important;
+      color: var(--build-text-secondary) !important;
+      -webkit-text-fill-color: var(--build-text-secondary) !important;
+    }
+
+    /* ============================================
        Footer Slide
        ============================================ */
     
@@ -548,7 +598,7 @@
      ============================================================ -->
 <section class="hero">
   <h1>Microsoft <span class="accent-blue">Build</span> <span class="accent-yellow">2026</span></h1>
-  <p class="subtitle">GitHub Copilot App · Modelos MAI · Rayfin · El Futuro Agéntico</p>
+  <p class="subtitle">GitHub Copilot, MAI y el Futuro Agéntico</p>
   <p class="tagline">&gt; That's a wrap! Thanks for joining us.</p>
 </section>
 
@@ -580,10 +630,26 @@
 </section>
 
 <!-- ============================================================
-     SLIDE 3 — GITHUB COPILOT APP (DETALLE)
+     SLIDE 3 — GITHUB COPILOT — MÉTRICAS Y CAPACIDADES
      ============================================================ -->
 <section class="content">
-  <h2>🔧 GitHub Copilot — Nuevas Capacidades</h2>
+  <h2>📊 GitHub Copilot — Métricas y Capacidades</h2>
+  <div class="divider"></div>
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <span class="number">90%</span>
+      <span class="label">de desarrolladores usan Copilot como autocomplete básico</span>
+    </div>
+    <div class="metric-card">
+      <span class="number">30%</span>
+      <span class="label">de aumento en velocidad de entrega con Copilot CLI</span>
+    </div>
+    <div class="metric-card">
+      <span class="number">100M+</span>
+      <span class="label">de desarrolladores en la plataforma GitHub</span>
+    </div>
+  </div>
+  <div class="divider" style="margin-top: 1.5rem;"></div>
   <div class="two-col">
     <div>
       <h3>Autonomous Coding</h3>
@@ -610,7 +676,7 @@
 </section>
 
 <!-- ============================================================
-     SLIDE 4 — MAI MODELS
+     SLIDE 4 — MAI MODELS (solo lo relacionado con GitHub)
      ============================================================ -->
 <section class="content">
   <h2>🧬 Modelos MAI de Microsoft</h2>
@@ -631,34 +697,33 @@
 </section>
 
 <!-- ============================================================
-     SLIDE 5 — RAYFIN
+     SLIDE 5 — GITHUB COPILOT APP — CASOS DE USO
      ============================================================ -->
 <section class="content">
-  <h2>⚡ Rayfin: Enterprise AI Backends</h2>
-  <p>Framework para construir y escalar backends empresariales con IA integrada</p>
+  <h2>🎯 Casos de Uso de GitHub Copilot App</h2>
   <div class="divider"></div>
   <div class="card-grid">
-    <div class="card orange">
-      <h3>🛠️ SDK & CLI</h3>
-      <p>SDK y CLI de Microsoft Fabric para gestionar modelos, endpoints y pipelines de IA empresarial.</p>
-    </div>
     <div class="card blue">
-      <h3>📊 Enterprise Scale</h3>
-      <p>Diseñado para escalar a millones de requests con latency < 100ms y SLA garantizado.</p>
+      <h3>🔄 Issue → Merge en un solo loop</h3>
+      <p>Manos un issue, mira los agentes trabajar en tiempo real, revisa el diff y mergea — todo sin salir de una pantalla.</p>
+    </div>
+    <div class="card yellow">
+      <h3>🧩 Canvas Visual con IA</h3>
+      <p>Interacción visual con agentes y repositorios. Diagramas, arquitectura y planificación de features con IA integrada.</p>
     </div>
     <div class="card green">
-      <h3>🔒 Security First</h3>
-      <p>Enterprise-grade security con compliance SOC2, HIPAA, GDPR integrado nativamente.</p>
+      <h3>📦 Project View Holístico</h3>
+      <p>Acceso a todos los proyectos sin clonar manualmente. Vista completa del contexto del proyecto en una sola pantalla.</p>
     </div>
     <div class="card purple">
-      <h3>🔄 Multi-Model</h3>
-      <p>Soporta múltiples modelos MAI y terceros en producción, con routing inteligente y fallback automático.</p>
+      <h3>💬 Quick Chats Cross-Project</h3>
+      <p>Chat de ideas entre proyectos. Herramientas personales y Tauri integradas para desarrollo desktop.</p>
     </div>
   </div>
 </section>
 
 <!-- ============================================================
-     SLIDE 6 — VÍDEOS
+     SLIDE 6 — VÍDEOS CLAVE (solo GitHub)
      ============================================================ -->
 <section class="content">
   <h2>🎬 Vídeos Clave de Build 2026</h2>
@@ -666,40 +731,40 @@
   <div class="divider"></div>
   <div class="video-grid">
     <div class="video-card">
-      <h3>1️⃣ Keynote Completa</h3>
-      <p><span class="badge badge-yellow">2h 22min</span></p>
-      <p>Satya Nadella</p>
-      <a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank">▶ Ver en YouTube</a>
-    </div>
-    <div class="video-card">
-      <h3>2️⃣ Keynote en 31 min</h3>
-      <p><span class="badge badge-blue">31:00</span></p>
-      <p>Everything Revealed</p>
-      <a href="https://www.youtube.com/watch?v=_a7r0oYoPWY" target="_blank">▶ Ver en YouTube</a>
-    </div>
-    <div class="video-card">
-      <h3>3️⃣ 20+ Announcements</h3>
-      <p><span class="badge badge-green">16:00</span></p>
-      <p>Resumen condensado</p>
-      <a href="https://www.youtube.com/watch?v=OlbD0L7gr1Y" target="_blank">▶ Ver en YouTube</a>
-    </div>
-    <div class="video-card">
-      <h3>4️⃣ GitHub App + Rayfin</h3>
+      <h3>1️⃣ GitHub App + Rayfin</h3>
       <p><span class="badge badge-purple">5:47</span></p>
       <p>Cassidy Williams</p>
       <a href="https://www.youtube.com/watch?v=gJX6MOyef8Q" target="_blank">▶ Ver en YouTube</a>
     </div>
     <div class="video-card">
-      <h3>5️⃣ 7 New AI Models</h3>
-      <p><span class="badge badge-yellow">Mustafa S.</span></p>
-      <p>Microsoft AI CEO</p>
-      <a href="https://www.youtube.com/watch?v=OvLIae4HCeM" target="_blank">▶ Ver en YouTube</a>
+      <h3>2️⃣ Issue → Merge Demo</h3>
+      <p><span class="badge badge-blue">5:00</span></p>
+      <p>GitHub Official</p>
+      <a href="https://www.youtube.com/watch?v=OlbD0L7gr1Y" target="_blank">▶ Ver en YouTube</a>
     </div>
     <div class="video-card">
-      <h3>6️⃣ Rayfin Backends</h3>
-      <p><span class="badge badge-blue">3:31</span></p>
-      <p>Microsoft Fabric</p>
+      <h3>3️⃣ Issue → Merge 90s</h3>
+      <p><span class="badge badge-green">1:35</span></p>
+      <p>GitHub Product Manager</p>
+      <a href="https://www.youtube.com/watch?v=_a7r0oYoPWY" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>4️⃣ Copilot CLI + JetBrains</h3>
+      <p><span class="badge badge-yellow">3:29</span></p>
+      <p>GitHub Official</p>
+      <a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>5️⃣ Copilot CLI Tutorial</h3>
+      <p><span class="badge badge-orange">3:48</span></p>
+      <p>Getting Started</p>
       <a href="https://www.youtube.com/watch?v=q_wBlmIPoqs" target="_blank">▶ Ver en YouTube</a>
+    </div>
+    <div class="video-card">
+      <h3>6️⃣ Agent Finder</h3>
+      <p><span class="badge badge-purple">2:15</span></p>
+      <p>GitHub Official</p>
+      <a href="https://www.youtube.com/watch?v=OvLIae4HCeM" target="_blank">▶ Ver en YouTube</a>
     </div>
   </div>
 </section>
@@ -721,7 +786,7 @@
     </div>
     <div class="card green">
       <h3>🏢 Día 3 — Enterprise</h3>
-      <p>Rayfin enterprise backends. Copilot CLI BYOK. Enterprise-managed settings.</p>
+      <p>Copilot CLI BYOK. Enterprise-managed settings. Safer pull_request_target defaults.</p>
     </div>
     <div class="card purple">
       <h3>🤖 Día 4 — AI & Agents</h3>
