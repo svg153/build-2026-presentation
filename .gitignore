@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Generated output (re-generated from themes + slides)
+*-final.html
+*.pdf
+*.pptx
+
+# Browser cache (for puppeteer)
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db

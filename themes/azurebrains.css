@@ -1,0 +1,193 @@
+/* ============================================
+   THEME: AzureBrains Community
+   Basado en Build 2026 pero con branding Azure
+   Colores: Azure Blue + Brain purple
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root {
+  /* Theme palette — AzureBrains Community */
+  --theme-bg: #0F0F1A;
+  --theme-text: #F0F0F5;
+  --theme-text-secondary: #A0A0B8;
+  --theme-text-muted: #606080;
+  --theme-card-bg: #1A1A2E;
+  --theme-divider: #2A2A45;
+  --theme-accent: #7B68EE;
+  --theme-primary: #0078D4;
+  --theme-font-heading: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --theme-font-body: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Card accent colors — Azure palette */
+  --c-blue: #0078D4;
+  --c-yellow: #FFB900;
+  --c-green: #00B7C3;
+  --c-purple: #7B68EE;
+  --c-orange: #FF8C00;
+  --c-pink: #E74856;
+  --c-cyan: #00D4FF;
+  --c-red: #D13438;
+}
+
+/* ============================================
+   Hero Slide — AzureBrains
+   ============================================ */
+
+section.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--theme-bg);
+  position: relative;
+}
+
+section.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(0, 120, 212, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 70% 80%, rgba(123, 104, 238, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(0, 183, 195, 0.06) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Neural network decorative pattern */
+section.hero::after {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 140px;
+  height: 140px;
+  background-image:
+    radial-gradient(circle at 50% 50%, var(--c-purple) 4px, transparent 4px),
+    radial-gradient(circle at 20% 30%, var(--c-blue) 3px, transparent 3px),
+    radial-gradient(circle at 80% 70%, var(--c-cyan) 3px, transparent 3px),
+    radial-gradient(circle at 30% 80%, var(--c-blue) 3px, transparent 3px),
+    radial-gradient(circle at 70% 20%, var(--c-purple) 3px, transparent 3px);
+  background-size: 140px 140px;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+section.hero h1 {
+  font-size: 3em !important;
+  color: var(--theme-text) !important;
+  -webkit-text-fill-color: var(--theme-text) !important;
+  margin-bottom: 0.3em !important;
+  line-height: 1.1 !important;
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.03em;
+}
+
+section.hero h1 .accent-blue {
+  color: var(--c-blue) !important;
+  -webkit-text-fill-color: var(--c-blue) !important;
+}
+
+section.hero h1 .accent-purple {
+  color: var(--c-purple) !important;
+  -webkit-text-fill-color: var(--c-purple) !important;
+}
+
+section.hero .subtitle {
+  font-size: 1.4em !important;
+  font-weight: 300 !important;
+  color: var(--theme-text-secondary) !important;
+  -webkit-text-fill-color: var(--theme-text-secondary) !important;
+  margin-bottom: 1.5em !important;
+  position: relative;
+  z-index: 1;
+}
+
+section.hero .tagline {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.85em !important;
+  color: var(--c-purple) !important;
+  -webkit-text-fill-color: var(--c-purple) !important;
+  padding: 0.5em 1.2em !important;
+  border: 1px solid var(--c-purple);
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+section.hero .hero-image {
+  max-width: 80%;
+  max-height: 35vh;
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 2px solid var(--c-blue);
+  box-shadow: 0 0 40px rgba(0, 120, 212, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   H2 AzureBrains style
+   ============================================ */
+
+h2 {
+  font-size: 1.8em !important;
+  color: var(--c-purple) !important;
+  -webkit-text-fill-color: var(--c-purple) !important;
+  margin-bottom: 1em !important;
+  padding-bottom: 0.4em !important;
+  border-bottom: 2px solid var(--theme-divider) !important;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.2em !important;
+  color: var(--c-blue) !important;
+  -webkit-text-fill-color: var(--c-blue) !important;
+  margin-bottom: 0.5em !important;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   Cards AzureBrains style
+   ============================================ */
+
+.card {
+  background: var(--theme-card-bg);
+  border: 1px solid var(--theme-divider);
+  border-radius: 10px;
+  padding: 1.1rem;
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  border-color: var(--c-purple);
+  box-shadow: 0 4px 20px rgba(123, 104, 238, 0.15);
+}
+
+/* ============================================
+   Metrics AzureBrains style
+   ============================================ */
+
+.metric-card .number {
+  font-size: 2.2em !important;
+  color: var(--c-purple) !important;
+  -webkit-text-fill-color: var(--c-purple) !important;
+}
+
+/* ============================================
+   Footer AzureBrains style
+   ============================================ */
+
+section.footer h2 {
+  font-size: 2.2em !important;
+  color: var(--c-blue) !important;
+  -webkit-text-fill-color: var(--c-blue) !important;
+  border: none !important;
+}
