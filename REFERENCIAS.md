@@ -122,6 +122,7 @@ Estos son los vídeos que me pasaste — los principales para la presentación:
 | 6 | `NOT_FOUND` | /inbox — Agente inteligente con widget interactivo | @basiclines (Ismael Canal) | https://x.com/i/status/2062248058407309688 |
 | 7 | `NOT_FOUND` | /spar — Dos agentes compitiendo | @OrenMe (Oren Melamed) | https://x.com/i/status/2057178123628671075 |
 | 8 | `JXw9QXlV50s` | **GitHub Copilot App Launch — Rubber Duck Takeover** | **GitHub canal oficial** | Lanzamiento oficial post-Build |
+| 9 | `NOT_FOUND` | Child Sessions — Spawnear sesiones hijas para split PRs | @awakecoding (Marc-André Moreau) | https://x.com/i/status/2069504096650793356 |
 
 ### 🎬 Vídeos Principales — GitHub Copilot App (5 vídeos)
 
