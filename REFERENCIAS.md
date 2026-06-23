@@ -120,7 +120,8 @@ Estos son los vídeos que me pasaste — los principales para la presentación:
 | 4 | `JAk2Df7sCc4` | Jueves de Quack: GitHub Copilot App | GitHub (oficial) | https://x.com/i/status/2069230022280585262 |
 | 5 | `NOT_FOUND` | Auto-merge granular — keep PRs in a loop until green | @basiclines (Ismael Canal) | https://x.com/i/status/2064392194765750672 |
 | 6 | `NOT_FOUND` | /inbox — Agente inteligente con widget interactivo | @basiclines (Ismael Canal) | https://x.com/i/status/2062248058407309688 |
-| 7 | `NOT_FOUND` | /spar — Dos agentes compitiendo por tu tarea | @OrenMe (Oren Melamed) | https://x.com/i/status/2057178123628671075 |
+| 7 | `NOT_FOUND` | /spar — Dos agentes compitiendo | @OrenMe (Oren Melamed) | https://x.com/i/status/2057178123628671075 |
+| 8 | `JXw9QXlV50s` | **GitHub Copilot App Launch — Rubber Duck Takeover** | **GitHub canal oficial** | Lanzamiento oficial post-Build |
 
 ### 🎬 Vídeos Principales — GitHub Copilot App (5 vídeos)
 
