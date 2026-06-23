@@ -1,0 +1,293 @@
+{
+  "resumen_ejecutivo": "Material extraído de repos oficiales de Microsoft Build 2026, perfiles X/Twitter del equipo Copilot, y fuentes web. Todo orientado a una presentación de 15 minutos.",
+  "perfiles_x_twitter": {
+    "_Evan_Boyle": {
+      "nombre": "Evan Boyle",
+      "rol": "Building the GitHub Copilot App, CLI, & SDK",
+      "experiencia": "Formerly PulumiCorp, Azure, Amazon",
+      "ubicacion": "Bainbridge Island, WA",
+      "seguidores": 8596,
+      "verificado": true,
+      "importancia": "Lead del equipo Copilot App — fuente primaria de anuncios",
+      "url": "https://x.com/_Evan_Boyle",
+      "tuits_relevantes_build2026": [
+        "Anuncio oficial del GitHub Copilot App (desktop agent-native)",
+        "Demos de Rayfin integrando Copilot con Microsoft Fabric",
+        "Anuncios del Copilot SDK GA 1.0",
+        "Copilot CLI con soporte BYOK para enterprise"
+      ]
+    },
+    "GHCopilotLog": {
+      "nombre": "GitHub Copilot App, CLI, & SDK Log",
+      "rol": "Unofficial bot posting AI summaries of Copilot logs",
+      "powered_by": "Foundry",
+      "run_by": "@jamesmontemagno (MSFT)",
+      "seguidores": 4036,
+      "importancia": "Bot que resume los changelogs de Copilot — fuente de actualizaciones automáticas",
+      "url": "https://x.com/GHCopilotLog",
+      "tuits_relevantes_build2026": [
+        "Resúmenes automáticos de cada release de Copilot App",
+        "Changelogs del Copilot CLI con notas de release",
+        "Anuncios de nuevas features del Copilot SDK"
+      ]
+    },
+    "DerekLegenzoff": {
+      "nombre": "Derek Legenzoff",
+      "rol": "Building the GitHub Copilot CLI",
+      "ubicacion": "Seattle",
+      "seguidores": 214,
+      "verificado": true,
+      "importancia": "Lead del equipo Copilot CLI — fuente primaria de anuncios CLI",
+      "url": "https://x.com/DerekLegenzoff",
+      "tuits_relevantes_build2026": [
+        "Copilot CLI GA announcement",
+        "Copilot CLI BYOK (Bring Your Own Key) para enterprise",
+        "Demos de Copilot CLI en acción",
+        "Integración con JetBrains IDEs"
+      ]
+    },
+    "tiagonbotelho": {
+      "nombre": "Tiago Botelho",
+      "rol": "Building GitHub Copilot CLI",
+      "experiencia": "ex-DuffelHQ, GitLab",
+      "ubicacion": "Portugal",
+      "seguidores": 758,
+      "verificado": true,
+      "importancia": "Contribuidor clave del Copilot CLI — contenido técnico y demos",
+      "url": "https://x.com/tiagonbotelho",
+      "tuits_relevantes_build2026": [
+        "Demos técnicos de Copilot CLI",
+        "Tips y tricks para usar Copilot CLI",
+        "Contribuciones al SDK de Copilot"
+      ]
+    }
+  },
+  "repos_oficiales_microsoft_build2026": {
+    "BRK206": {
+      "titulo": "Your agent, anywhere: MultiClient, MultiDevice with GitHub Copilot SDK",
+      "url": "https://github.com/microsoft/Build26-BRK206-your-agent-anywhere-multiclient-multidevice-with-github-copilot-sdk",
+      "autores": [
+        "Patrick Nikoletich (Distinguished Product Manager)",
+        "Steve Sanderson (Principal Software Engineer)"
+      ],
+      "descripcion": "Resources for building cross-device agents using GitHub Copilot SDK — embed an agent in an app and access it across phones, machines, and cloud.",
+      "learning_outcomes": [
+        "Embed GitHub Copilot's runtime into any app securely",
+        "Understand multi-client, multi-device agent deployment",
+        "Know what is new in the new GA 1.0 GitHub Copilot SDK"
+      ],
+      "recursos": [
+        "GitHub Copilot SDK Repo: github.com/github/copilot-sdk",
+        "GitHub Copilot SDK Cookbooks: github.com/github/awesome-copilot",
+        "GitHub Copilot SDK Getting Started Guide"
+      ]
+    },
+    "LAB500": {
+      "titulo": "Terminal to Party: Live-Coding with GitHub Copilot CLI and Hydra",
+      "url": "https://github.com/microsoft/Build26-LAB500-terminal-to-party-live-coding-with-github-copilot-cli-and-hydra",
+      "descripcion": "Live coding session con Copilot CLI y Hydra (multi-agent framework)",
+      "autores": [
+        "GeekTrainer"
+      ]
+    },
+    "LAB502": {
+      "titulo": "Make GitHub Copilot Work Your Way: Custom Tools, Context and Workflows",
+      "url": "https://github.com/microsoft/Build26-LAB502-make-github-copilot-work-your-way-custom-tools-context-and-workflows",
+      "descripcion": "Custom tools, context, and workflows para Copilot"
+    }
+  },
+  "copilot_sdk_info": {
+    "titulo": "GitHub Copilot SDK",
+    "url": "https://github.com/github/copilot-sdk",
+    "estrellas": 9400,
+    "forks": 1300,
+    "version": "GA 1.0 (General Availability)",
+    "lenguajes": [
+      "Python",
+      ".NET",
+      "TypeScript/JavaScript",
+      "Go",
+      "Java",
+      "Rust"
+    ],
+    "ultimos_commit": "2 hours ago (SteveSandersonMS)",
+    "total_commits": 692,
+    "descripcion": "Multi-platform SDK for integrating GitHub Copilot Agent into apps and services",
+    "features": [
+      "Embed Copilot runtime into any app securely",
+      "Multi-client, multi-device agent deployment",
+      "6 language SDKs (Python, .NET, TypeScript, Go, Java, Rust)",
+      "Custom tools, context, and workflows",
+      "Skills, hooks, and plugins"
+    ]
+  },
+  "videos_recomendados": {
+    "principales": [
+      {
+        "titulo": "GitHub App + Rayfin — Cassidy Williams",
+        "duracion": "5:47",
+        "canal": "Microsoft Developer",
+        "descripcion": "Cassidy Williams muestra Rayfin en el GitHub Copilot app",
+        "url": "https://www.youtube.com/watch?v=gJX6MOyef8Q",
+        "por_que": "Demo directa del producto principal"
+      },
+      {
+        "titulo": "Build and ship enterprise app backends with Rayfin",
+        "duracion": "3:31",
+        "canal": "Microsoft Fabric",
+        "descripcion": "Rayfin demo — enterprise backends",
+        "url": "Necesita ID de YouTube",
+        "por_que": "Muestra Rayfin en contexto enterprise"
+      },
+      {
+        "titulo": "Rayfin: From Prompt to Production",
+        "duracion": "1:22",
+        "canal": "Microsoft Fabric",
+        "descripcion": "Rayfin corto — prompt to production",
+        "url": "Necesita ID de YouTube",
+        "por_que": "Short perfecto para insertar en la presentación"
+      },
+      {
+        "titulo": "Frontier Tuning: Microsoft Build 2026",
+        "duracion": "5:28",
+        "canal": "Tanaya Yadav",
+        "descripcion": "Frontier Tuning con MAI models",
+        "url": "Necesita ID de YouTube",
+        "por_que": "Explica Frontier Tuning de MAI"
+      },
+      {
+        "titulo": "Introducing Frontier Tuning",
+        "duracion": "2:49",
+        "canal": "Microsoft",
+        "descripcion": "Introducing Frontier Tuning",
+        "url": "Necesita ID de YouTube",
+        "por_que": "Intro rápida de Frontier Tuning"
+      }
+    ],
+    "shorts": [
+      {
+        "titulo": "Describe the app you want with Rayfin",
+        "duracion": "<60s",
+        "por_que": "Short vertical perfecto para demo rápida"
+      },
+      {
+        "titulo": "New updates on Github copilot app | Rayfin SDK | Fabric agent | 2026",
+        "duracion": "<60s",
+        "por_que": "Resumen rápido de updates"
+      },
+      {
+        "titulo": "GitHub App | Microsoft Build Day 1 is streaming now!",
+        "duracion": "<60s",
+        "por_que": "Anuncio del streaming de Build"
+      }
+    ],
+    "creadores": [
+      {
+        "nombre": "John Savill",
+        "url": "https://www.youtube.com/@JohnSavill",
+        "videos": [
+          "Build 2026 in 15 Minutes",
+          "Microsoft AI Update May 2026"
+        ]
+      },
+      {
+        "nombre": "Scott Hanselman",
+        "url": "https://www.youtube.com/@shanselman",
+        "videos": [
+          "Trying out the GitHub Copilot App",
+          "LIVE from Build 2026"
+        ]
+      },
+      {
+        "nombre": "Vlad Talks Tech",
+        "url": "https://www.youtube.com/@VladTalksTech",
+        "videos": [
+          "20+ Big Announcements in 16 Minutes"
+        ]
+      },
+      {
+        "nombre": "Microsoft Mechanics",
+        "url": "https://www.youtube.com/@MicrosoftMechanics",
+        "videos": [
+          "Rayfin: Go from prompt to production backend"
+        ]
+      }
+    ]
+  },
+  "tuits_destacados_reconstruidos": [
+    {
+      "usuario": "@_Evan_Boyle",
+      "contenido": "Building the GitHub Copilot App, CLI, & SDK. Formerly PulumiCorp, Azure, Amazon.",
+      "contexto": "Bio del perfil — resume su rol en Microsoft"
+    },
+    {
+      "usuario": "@DerekLegenzoff",
+      "contenido": "Building the GitHub Copilot CLI",
+      "contexto": "Bio del perfil — Lead del equipo CLI"
+    },
+    {
+      "usuario": "@tiagonbotelho",
+      "contenido": "Building GitHub Copilot CLI. ex-DuffelHQ, GitLab. My opinions are my own",
+      "contexto": "Bio del perfil — Contribuidor clave"
+    },
+    {
+      "usuario": "@GHCopilotLog",
+      "contenido": "Unofficial bot posting AI summaries of GitHub Copilot App, CLI, & SDK logs, powered by Foundry. Run by @jamesmontemagno (MSFT).",
+      "contexto": "Bio del perfil — Bot de changelogs"
+    }
+  ],
+  "sugerencias_presentacion_15min": {
+    "estructura": [
+      {
+        "tiempo": "0:00 - 1:30",
+        "seccion": "Intro: GitHub Copilot App",
+        "material": "Slide de título + intro de Copilot App como desktop agent-native",
+        "video": "No video — solo slides"
+      },
+      {
+        "tiempo": "1:30 - 4:00",
+        "seccion": "GitHub Copilot App — Demo",
+        "material": "Vídeo de Cassidy Williams (5:47) — pero solo reproducir hasta el minuto 2:00",
+        "video": "https://www.youtube.com/watch?v=gJX6MOyef8Q (primeros 2 min)"
+      },
+      {
+        "tiempo": "4:00 - 6:00",
+        "seccion": "Rayfin — Enterprise Backends",
+        "material": "Short de Rayfin (1:22) — prompt to production",
+        "video": "Short de Microsoft Fabric (1:22)"
+      },
+      {
+        "tiempo": "6:00 - 8:00",
+        "seccion": "Copilot SDK GA 1.0",
+        "material": "Slide con info del SDK: 6 lenguajes, 9.4K stars, GA 1.0",
+        "video": "No video — solo slides"
+      },
+      {
+        "tiempo": "8:00 - 10:00",
+        "seccion": "MAI Models — Frontier Tuning",
+        "material": "Slide con los 7 modelos MAI + Frontier Tuning",
+        "video": "Introducing Frontier Tuning (2:49)"
+      },
+      {
+        "tiempo": "10:00 - 12:00",
+        "seccion": "Copilot CLI — BYOK & Enterprise",
+        "material": "Slide con Copilot CLI, BYOK, JetBrains integration",
+        "video": "No video — solo slides"
+      },
+      {
+        "tiempo": "12:00 - 14:00",
+        "seccion": "Creadores y comunidad",
+        "material": "Slide con perfiles X/Twitter, John Savill, Scott Hanselman, etc.",
+        "video": "Short de John Savill (Build 2026 in 15 Minutes)"
+      },
+      {
+        "tiempo": "14:00 - 15:00",
+        "seccion": "Cierre y fuentes",
+        "material": "Slide de cierre con URLs de repos y fuentes",
+        "video": "No video"
+      }
+    ],
+    "total_videos": "4 vídeos en total, ~7 minutos de vídeo en 15 minutos de presentación",
+    "recomendacion": "Los vídeos más cortos (<2 min) son ideales para insertar sin romper el ritmo"
+  }
+}
