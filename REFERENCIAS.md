@@ -108,6 +108,18 @@
 
 ## 📺 Vídeos Completos para Presentación
 
+### 🎬 Vídeos de las referencias X/Twitter (5 vídeos principales)
+
+Estos son los vídeos que me pasaste — los principales para la presentación:
+
+| # | ID | Título | Canal | Enlace X |
+|---|----|--------|-------|----------|
+| 1 | `UzYm0kyVY9s` | Exploring the agent-first GitHub Copilot desktop app \| GitHub Checkout | GitHub (oficial) | https://x.com/jtclancey/status/2069222347639591284 |
+| 2 | `EhtufIQ0cNM` | GitHub Copilot App: your agent command center 🤖🚀 is finally here! | return(GiS); | https://x.com/i/status/2069223933119705249 |
+| 3 | `qGXVeWw7vz8` | GitHub Copilot Desktop: The App That Wants to Change How We Use AI Agents | Fazt Code | https://x.com/i/status/2069273417812193535 |
+| 4 | `JAk2Df7sCc4` | Jueves de Quack: GitHub Copilot App | GitHub (oficial) | https://x.com/i/status/2069230022280585262 |
+| 5 | `NOT_FOUND` | Auto-merge granular — keep PRs in a loop until green | @basiclines (Ismael Canal) | https://x.com/i/status/2064392194765750672 |
+
 ### 🎬 Vídeos Principales — GitHub Copilot App (5 vídeos)
 
 | # | ID | Título | Duración | Canal | Relevancia |
