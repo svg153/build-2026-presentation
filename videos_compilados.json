@@ -1,0 +1,295 @@
+{
+  "github_copilot_app": [
+    {
+      "id": "gJX6MOyef8Q",
+      "titulo": "GitHub App + Rayfin: Microsoft Build 2026",
+      "duracion": "5:47",
+      "canal": "Microsoft Developer",
+      "descripcion": "Cassidy Williams muestra Rayfin en el GitHub Copilot app",
+      "relevancia": "Principal — demo oficial del producto"
+    },
+    {
+      "id": "czAIWMCfkPY",
+      "titulo": "GitHub Copilot App - Intro",
+      "duracion": "13:47",
+      "canal": "Rob Bos",
+      "descripcion": "First intro video about the new GitHub Copilot App",
+      "relevancia": "Intro detallada del producto"
+    },
+    {
+      "id": "ylPjZVaLJYI",
+      "titulo": "Build a Planning App with the GitHub Copilot SDK | demo",
+      "duracion": "4:04",
+      "canal": "Microsoft Developer",
+      "descripcion": "Demo de construcción de app con Copilot SDK",
+      "relevancia": "Demo corto y práctico"
+    },
+    {
+      "id": "tuKn8z-UolA",
+      "titulo": "GitHub Copilot app with local models!",
+      "duracion": "2:14",
+      "canal": "Microsoft Developer",
+      "descripcion": "GitHub Copilot app con modelos locales",
+      "relevancia": "Short sobre modelos locales"
+    },
+    {
+      "id": "So1s_3lVGaA",
+      "titulo": "My First GitHub Copilot App for RFP Automation Using Microsoft Foundry Agent",
+      "duracion": "8:47",
+      "canal": "Balamurugan Balakreshnan",
+      "descripcion": "Primer app de Copilot para automatización RFP",
+      "relevancia": "Caso de uso real"
+    }
+  ],
+  "rayfin": [
+    {
+      "id": "wZsB20MrYs8",
+      "titulo": "Build a Fabric App with Rayfin + GitHub Copilot CLI",
+      "duracion": "16:31",
+      "canal": "Rajeev",
+      "descripcion": "Build and deploy a complete Microsoft Fabric App in 10 minutes",
+      "relevancia": "Demo completo de Rayfin + CLI"
+    },
+    {
+      "id": "GuTQDXKwdJQ",
+      "titulo": "Use Claude, Codex and Copilot together on GitHub",
+      "duracion": "1:22",
+      "canal": "Microsoft Developer",
+      "descripcion": "Short sobre uso conjunto de modelos",
+      "relevancia": "Short comparativo"
+    }
+  ],
+  "copilot_cli": [
+    {
+      "id": "ZpnR3GEah_4",
+      "titulo": "Introducing Copilot CLI and agentic features in JetBrains IDEs",
+      "duracion": "3:29",
+      "canal": "GitHub",
+      "descripcion": "Bring the power of agentic development directly into your favorite JetBrains IDEs",
+      "relevancia": "Integración CLI + JetBrains — NEW"
+    },
+    {
+      "id": "rheqk-L7Yes",
+      "titulo": "Ultimate GitHub Copilot CLI tutorial for beginners",
+      "duracion": "23:40",
+      "canal": "GitHub",
+      "descripcion": "Complete beginner compilation covering everything",
+      "relevancia": "Tutorial completo"
+    },
+    {
+      "id": "5TN6l7JGWvs",
+      "titulo": "Build a Personal Assistant with GitHub Copilot SDK + Copilot CLI",
+      "duracion": "5:09",
+      "canal": "GitHub",
+      "descripcion": "Build your own AI assistant with Copilot SDK and CLI",
+      "relevancia": "Demo práctico SDK + CLI"
+    },
+    {
+      "id": "0LxCWWBIDcU",
+      "titulo": "Use GitHub Copilot CLI with Open LLMs (No Github Subscription Needed)/BYOK",
+      "duracion": "35:01",
+      "canal": "GitHub",
+      "descripcion": "BYOK — Bring Your Own Key para enterprise",
+      "relevancia": "BYOK — enterprise — NEW"
+    },
+    {
+      "id": "BDxRhhs36ns",
+      "titulo": "Getting started with GitHub Copilot CLI | Tutorial for beginners",
+      "duracion": "3:48",
+      "canal": "GitHub",
+      "descripcion": "Getting started with Copilot CLI",
+      "relevancia": "Tutorial corto de inicio"
+    },
+    {
+      "id": "OL1XZG0u7kU",
+      "titulo": "How to Implement Copilot CLI Jetbrains",
+      "duracion": "4:34",
+      "canal": "GitHub",
+      "descripcion": "Implementación de Copilot CLI en JetBrains",
+      "relevancia": "Integración JetBrains — NEW"
+    },
+    {
+      "id": "2GMKFbldb9c",
+      "titulo": "GitHub Copilot in JetBrains: Demo of MCP and agent mode",
+      "duracion": "2:42",
+      "canal": "GitHub",
+      "descripcion": "Demo de MCP y agent mode en JetBrains",
+      "relevancia": "Demo corto MCP/agent — NEW"
+    },
+    {
+      "id": "givppH8MVvQ",
+      "titulo": "Copilot Agent Mode is now available in JetBrains IDEs",
+      "duracion": "2:57",
+      "canal": "GitHub",
+      "descripcion": "Copilot Agent Mode disponible en JetBrains",
+      "relevancia": "Anuncio de disponibilidad — NEW"
+    },
+    {
+      "id": "6yhUdYU6fLY",
+      "titulo": "Generate Useful Apps in Seconds with GitHub Copilot CLI (C# & Python)",
+      "duracion": "11:01",
+      "canal": "GitHub",
+      "descripcion": "Generar apps útiles en segundos con CLI",
+      "relevancia": "Demo de generación rápida"
+    },
+    {
+      "id": "n1S3CCoEx6U",
+      "titulo": "How To Build Agents in Copilot Studio 20x Faster with GitHub Copilot CLI",
+      "duracion": "13:06",
+      "canal": "GitHub",
+      "descripcion": "Construir agents 20x más rápido con CLI",
+      "relevancia": "Productividad con CLI"
+    },
+    {
+      "id": "DtQjVIRRszM",
+      "titulo": "How to use MCP servers with GitHub Copilot CLI | Tutorial for beginners",
+      "duracion": "4:24",
+      "canal": "GitHub",
+      "descripcion": "Usar MCP servers con Copilot CLI",
+      "relevancia": "Tutorial MCP — NEW"
+    },
+    {
+      "id": "VkOibxsQ1oU",
+      "titulo": "The ultimate guide to the GitHub Copilot CLI | Full demo | GitHub Checkout",
+      "duracion": "6:18",
+      "canal": "GitHub",
+      "descripcion": "Guía completa con demo de Copilot CLI",
+      "relevancia": "Guía definitiva"
+    },
+    {
+      "id": "c2QeGuWPnSw",
+      "titulo": "Build with the Copilot CLI - Mona Mayhem",
+      "duracion": "50:22",
+      "canal": "GitHub",
+      "descripcion": "Construir con Copilot CLI — Mona Mayhem",
+      "relevancia": "Demo largo completo"
+    }
+  ],
+  "mai_frontier_tuning": [
+    {
+      "id": "ynxh3ujRIKk",
+      "titulo": "Frontier Tuning: Microsoft Build 2026",
+      "duracion": "5:28",
+      "canal": "Microsoft Developer",
+      "descripcion": "Tanaya Yadav demuestra cómo crear enterprise AI con modelos ajustados",
+      "relevancia": "Demo oficial de Frontier Tuning"
+    },
+    {
+      "id": "I-ej54mJHJk",
+      "titulo": "Introducing Frontier Tuning | Microsoft AI Models",
+      "duracion": "2:49",
+      "canal": "Microsoft",
+      "descripcion": "Introducing Frontier Tuning",
+      "relevancia": "Intro oficial de Frontier Tuning"
+    },
+    {
+      "id": "OvLIae4HCeM",
+      "titulo": "Microsoft AI CEO unveils 7 new AI models | Mustafa Suleyman at Microsoft Build 2026",
+      "duracion": "14:37",
+      "canal": "Microsoft",
+      "descripcion": "Microsoft AI CEO presenta 7 nuevos modelos AI",
+      "relevancia": "Anuncio de 7 modelos MAI — NEW"
+    }
+  ],
+  "sdk_tutorials": [
+    {
+      "id": "ZGo362en01M",
+      "titulo": "🥇 GitHub Copilot SDK Tutorial: Build AI Apps with Live Coding",
+      "duracion": "6:11",
+      "canal": "GitHub",
+      "descripcion": "Tutorial de Copilot SDK con live coding",
+      "relevancia": "Tutorial SDK con demo en vivo"
+    },
+    {
+      "id": "ylPjZVaLJYI",
+      "titulo": "Build a Planning App with the GitHub Copilot SDK | demo",
+      "duracion": "4:04",
+      "canal": "Microsoft Developer",
+      "descripcion": "Demo de construcción de app con Copilot SDK",
+      "relevancia": "Demo corto y práctico"
+    }
+  ],
+  "shorts_recomendados": [
+    {
+      "id": "GuTQDXKwdJQ",
+      "titulo": "Use Claude, Codex and Copilot together on GitHub",
+      "duracion": "1:22",
+      "canal": "Microsoft Developer",
+      "relevancia": "Short comparativo de modelos"
+    },
+    {
+      "id": "tuKn8z-UolA",
+      "titulo": "GitHub Copilot app with local models!",
+      "duracion": "2:14",
+      "canal": "Microsoft Developer",
+      "relevancia": "Short sobre modelos locales"
+    },
+    {
+      "id": "2GMKFbldb9c",
+      "titulo": "GitHub Copilot in JetBrains: Demo of MCP and agent mode",
+      "duracion": "2:42",
+      "canal": "GitHub",
+      "relevancia": "Demo corto MCP/agent"
+    },
+    {
+      "id": "givppH8MVvQ",
+      "titulo": "Copilot Agent Mode is now available in JetBrains IDEs",
+      "duracion": "2:57",
+      "canal": "GitHub",
+      "relevancia": "Anuncio de disponibilidad"
+    },
+    {
+      "id": "BDxRhhs36ns",
+      "titulo": "Getting started with GitHub Copilot CLI | Tutorial for beginners",
+      "duracion": "3:48",
+      "canal": "GitHub",
+      "relevancia": "Tutorial corto de inicio"
+    },
+    {
+      "id": "DtQjVIRRszM",
+      "titulo": "How to use MCP servers with GitHub Copilot CLI | Tutorial for beginners",
+      "duracion": "4:24",
+      "canal": "GitHub",
+      "relevancia": "Tutorial MCP"
+    },
+    {
+      "id": "OL1XZG0u7kU",
+      "titulo": "How to Implement Copilot CLI Jetbrains",
+      "duracion": "4:34",
+      "canal": "GitHub",
+      "relevancia": "Integración JetBrains"
+    }
+  ],
+  "creadores_recomendados": [
+    {
+      "nombre": "John Savill",
+      "url": "https://www.youtube.com/@JohnSavill",
+      "videos": [
+        "Build 2026 in 15 Minutes",
+        "Microsoft AI Update May 2026"
+      ]
+    },
+    {
+      "nombre": "Scott Hanselman",
+      "url": "https://www.youtube.com/@shanselman",
+      "videos": [
+        "Trying out the GitHub Copilot App",
+        "LIVE from Build 2026"
+      ]
+    },
+    {
+      "nombre": "Vlad Talks Tech",
+      "url": "https://www.youtube.com/@VladTalksTech",
+      "videos": [
+        "20+ Big Announcements in 16 Minutes"
+      ]
+    },
+    {
+      "nombre": "Microsoft Mechanics",
+      "url": "https://www.youtube.com/@MicrosoftMechanics",
+      "videos": [
+        "Rayfin: Go from prompt to production backend"
+      ]
+    }
+  ]
+}

@@ -106,66 +106,96 @@
 
 ---
 
-## 📺 Vídeos Recomendados para Presentación
+## 📺 Vídeos Completos para Presentación
 
-### Vídeos Principales (usar 2-3)
+### 🎬 Vídeos Principales — GitHub Copilot App (5 vídeos)
 
-1. **GitHub App + Rayfin** — Cassidy Williams (5:47)
-   - Canal: Microsoft Developer
-   - URL: https://www.youtube.com/watch?v=gJX6MOyef8Q
-   - Por qué: Demo directa del producto principal
+| # | ID | Título | Duración | Canal | Relevancia |
+|---|----|--------|----------|-------|------------|
+| 1 | `gJX6MOyef8Q` | GitHub App + Rayfin: Microsoft Build 2026 | 5:47 | Microsoft Developer | Principal — demo oficial del producto |
+| 2 | `czAIWMCfkPY` | GitHub Copilot App - Intro | 13:47 | Rob Bos | Intro detallada del producto |
+| 3 | `ylPjZVaLJYI` | Build a Planning App with the GitHub Copilot SDK | 4:04 | Microsoft Developer | Demo corto y práctico |
+| 4 | `tuKn8z-UolA` | GitHub Copilot app with local models! | 2:14 | Microsoft Developer | Short sobre modelos locales |
+| 5 | `So1s_3lVGaA` | My First GitHub Copilot App for RFP Automation | 8:47 | Balamurugan Balakreshnan | Caso de uso real |
 
-2. **Build and ship enterprise app backends with Rayfin** (3:31)
-   - Canal: Microsoft Fabric
-   - Por qué: Muestra Rayfin en contexto enterprise
+### 🚀 Vídeos Rayfin (2 vídeos)
 
-3. **Rayfin: From Prompt to Production** (1:22)
-   - Canal: Microsoft Fabric
-   - Por qué: Short perfecto para insertar en la presentación
+| # | ID | Título | Duración | Canal | Relevancia |
+|---|----|--------|----------|-------|------------|
+| 1 | `wZsB20MrYs8` | Build a Fabric App with Rayfin + GitHub Copilot CLI | 16:31 | Rajeev | Demo completo de Rayfin + CLI |
+| 2 | `GuTQDXKwdJQ` | Use Claude, Codex and Copilot together on GitHub | 1:22 | Microsoft Developer | Short comparativo de modelos |
 
-4. **Frontier Tuning: Microsoft Build 2026** (5:28)
-   - Canal: Tanaya Yadav
-   - Por qué: Explica Frontier Tuning de MAI
+### 💻 Vídeos Copilot CLI (13 vídeos)
 
-5. **Introducing Frontier Tuning** (2:49)
-   - Canal: Microsoft
-   - Por qué: Intro rápida de Frontier Tuning
+| # | ID | Título | Duración | Canal | Relevancia |
+|---|----|--------|----------|-------|------------|
+| 1 | `ZpnR3GEah_4` | Introducing Copilot CLI and agentic features in JetBrains IDEs | 3:29 | GitHub | Integración CLI + JetBrains |
+| 2 | `rheqk-L7Yes` | Ultimate GitHub Copilot CLI tutorial for beginners | 23:40 | GitHub | Tutorial completo |
+| 3 | `5TN6l7JGWvs` | Build a Personal Assistant with GitHub Copilot SDK + Copilot CLI | 5:09 | GitHub | Demo práctico SDK + CLI |
+| 4 | `0LxCWWBIDcU` | Use GitHub Copilot CLI with Open LLMs (No Github Subscription Needed)/BYOK | 35:01 | GitHub | BYOK — enterprise |
+| 5 | `BDxRhhs36ns` | Getting started with GitHub Copilot CLI | 3:48 | GitHub | Tutorial corto de inicio |
+| 6 | `OL1XZG0u7kU` | How to Implement Copilot CLI Jetbrains | 4:34 | GitHub | Integración JetBrains |
+| 7 | `2GMKFbldb9c` | GitHub Copilot in JetBrains: Demo of MCP and agent mode | 2:42 | GitHub | Demo corto MCP/agent |
+| 8 | `givppH8MVvQ` | Copilot Agent Mode is now available in JetBrains IDEs | 2:57 | GitHub | Anuncio de disponibilidad |
+| 9 | `6yhUdYU6fLY` | Generate Useful Apps in Seconds with GitHub Copilot CLI (C# & Python) | 11:01 | GitHub | Demo de generación rápida |
+| 10 | `n1S3CCoEx6U` | How To Build Agents in Copilot Studio 20x Faster with GitHub Copilot CLI | 13:06 | GitHub | Productividad con CLI |
+| 11 | `DtQjVIRRszM` | How to use MCP servers with GitHub Copilot CLI | 4:24 | GitHub | Tutorial MCP |
+| 12 | `VkOibxsQ1oU` | The ultimate guide to the GitHub Copilot CLI | 6:18 | GitHub | Guía definitiva |
+| 13 | `c2QeGuWPnSw` | Build with the Copilot CLI - Mona Mayhem | 50:22 | GitHub | Demo largo completo |
 
-### Shorts (<60s) — Usar 2-3
+### 🤖 Vídeos MAI / Frontier Tuning (3 vídeos)
 
-1. **Describe the app you want with Rayfin** (<60s)
-   - Short vertical perfecto para demo rápida
+| # | ID | Título | Duración | Canal | Relevancia |
+|---|----|--------|----------|-------|------------|
+| 1 | `ynxh3ujRIKk` | Frontier Tuning: Microsoft Build 2026 | 5:28 | Microsoft Developer | Demo oficial de Frontier Tuning |
+| 2 | `I-ej54mJHJk` | Introducing Frontier Tuning | 2:49 | Microsoft | Intro oficial de Frontier Tuning |
+| 3 | `OvLIae4HCeM` | Microsoft AI CEO unveils 7 new AI models | 14:37 | Microsoft | Anuncio de 7 modelos MAI |
 
-2. **New updates on Github copilot app | Rayfin SDK | Fabric agent | 2026** (<60s)
-   - Resumen rápido de updates
+### 📚 Vídeos SDK Tutorials (2 vídeos)
 
-3. **GitHub App | Microsoft Build Day 1 is streaming now!** (<60s)
-   - Anuncio del streaming de Build
+| # | ID | Título | Duración | Canal | Relevancia |
+|---|----|--------|----------|-------|------------|
+| 1 | `ZGo362en01M` | GitHub Copilot SDK Tutorial: Build AI Apps with Live Coding | 6:11 | GitHub | Tutorial SDK con demo en vivo |
+| 2 | `ylPjZVaLJYI` | Build a Planning App with the GitHub Copilot SDK | 4:04 | Microsoft Developer | Demo corto y práctico |
 
-### Creadores Recomendados (usar 1-2)
+### 📱 Shorts Recomendados (7 vídeos)
 
-1. **John Savill** — Build 2026 in 15 Minutes, Microsoft AI Update May 2026
-2. **Scott Hanselman** — Trying out the GitHub Copilot App, LIVE from Build 2026
-3. **Vlad Talks Tech** — 20+ Big Announcements in 16 Minutes
-4. **Microsoft Mechanics** — Rayfin: Go from prompt to production backend
+| # | ID | Título | Duración | Canal | Relevancia |
+|---|----|--------|----------|-------|------------|
+| 1 | `GuTQDXKwdJQ` | Use Claude, Codex and Copilot together on GitHub | 1:22 | Microsoft Developer | Short comparativo de modelos |
+| 2 | `tuKn8z-UolA` | GitHub Copilot app with local models! | 2:14 | Microsoft Developer | Short sobre modelos locales |
+| 3 | `2GMKFbldb9c` | GitHub Copilot in JetBrains: Demo of MCP and agent mode | 2:42 | GitHub | Demo corto MCP/agent |
+| 4 | `givppH8MVvQ` | Copilot Agent Mode is now available in JetBrains IDEs | 2:57 | GitHub | Anuncio de disponibilidad |
+| 5 | `BDxRhhs36ns` | Getting started with GitHub Copilot CLI | 3:48 | GitHub | Tutorial corto de inicio |
+| 6 | `DtQjVIRRszM` | How to use MCP servers with GitHub Copilot CLI | 4:24 | GitHub | Tutorial MCP |
+| 7 | `OL1XZG0u7kU` | How to Implement Copilot CLI Jetbrains | 4:34 | GitHub | Integración JetBrains |
+
+### 👥 Creadores Recomendados (4 canales)
+
+| # | Nombre | URL | Videos Recomendados |
+|---|--------|-----|---------------------|
+| 1 | John Savill | https://www.youtube.com/@JohnSavill | Build 2026 in 15 Minutes, Microsoft AI Update May 2026 |
+| 2 | Scott Hanselman | https://www.youtube.com/@shanselman | Trying out the GitHub Copilot App, LIVE from Build 2026 |
+| 3 | Vlad Talks Tech | https://www.youtube.com/@VladTalksTech | 20+ Big Announcements in 16 Minutes |
+| 4 | Microsoft Mechanics | https://www.youtube.com/@MicrosoftMechanics | Rayfin: Go from prompt to production backend |
 
 ---
 
 ## 📅 Sugerencia de Estructura para Presentación de 15 Minutos
 
-| Tiempo | Sección | Material | Vídeo |
-|--------|---------|----------|-------|
-| 0:00 - 1:30 | Intro: GitHub Copilot App | Slide de título + intro | No video |
-| 1:30 - 4:00 | GitHub Copilot App — Demo | Cassidy Williams (5:47) | Primeros 2 min |
-| 4:00 - 6:00 | Rayfin — Enterprise Backends | Short de Rayfin (1:22) | Sí |
-| 6:00 - 8:00 | Copilot SDK GA 1.0 | Slide con info del SDK | No video |
-| 8:00 - 10:00 | MAI Models — Frontier Tuning | Slide con 7 modelos MAI | Frontier Tuning (2:49) |
-| 10:00 - 12:00 | Copilot CLI — BYOK & Enterprise | Slide con CLI features | No video |
-| 12:00 - 14:00 | Creadores y comunidad | Slide con perfiles X/Twitter | Short de John Savill |
-| 14:00 - 15:00 | Cierre y fuentes | Slide de cierre | No video |
+| Tiempo | Sección | Material | Vídeo | Duración |
+|--------|---------|----------|-------|----------|
+| 0:00 - 1:30 | Intro: GitHub Copilot App | Slide de título + intro | No video | — |
+| 1:30 - 4:00 | GitHub Copilot App — Demo | Cassidy Williams (5:47) | `gJX6MOyef8Q` | 2 min (recortado) |
+| 4:00 - 6:00 | Rayfin — Enterprise Backends | Build a Fabric App with Rayfin | `wZsB20MrYs8` | 3 min (recortado) |
+| 6:00 - 8:00 | Copilot SDK GA 1.0 | Slide con info del SDK | No video | — |
+| 8:00 - 10:00 | MAI Models — Frontier Tuning | Frontier Tuning demo | `ynxh3ujRIKk` | 5 min |
+| 10:00 - 12:00 | Copilot CLI — BYOK & Enterprise | Copilot CLI + JetBrains | `ZpnR3GEah_4` | 3 min |
+| 12:00 - 14:00 | Creadores y comunidad | Slide con perfiles X/Twitter | No video | — |
+| 14:00 - 15:00 | Cierre y fuentes | Slide de cierre | No video | — |
 
-**Total vídeos:** 4 vídeos en total, ~7 minutos de vídeo en 15 minutos de presentación
-**Recomendación:** Los vídeos más cortos (<2 min) son ideales para insertar sin romper el ritmo
+**Total vídeos:** 4 vídeos en total, ~13 minutos de vídeo en 15 minutos de presentación
+**Recomendación:** Los vídeos más cortos (<3 min) son ideales para insertar sin romper el ritmo
 
 ---
 
@@ -182,5 +212,5 @@
 
 - **PRESENTACIÓN:** https://svg153.github.io/build-2026-presentation/
 - **REPOSITORIO:** github.com/svg153/build-2026-presentation
-- **MATERIAL JSON:** material_presentacion.json (datos completos)
+- **MATERIAL JSON:** videos_compilados.json (datos completos)
 - **FORMATO:** Marp HTML con diseño oficial Build 2026
