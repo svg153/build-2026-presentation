@@ -589,6 +589,325 @@
     .marp-pagination {
       display: none !important;
     }
+
+    /* ============================================
+       RESPONSIVE DESIGN
+       ============================================ */
+    
+    /* Tablet: 768px - 1024px */
+    @media (max-width: 1024px) {
+      section {
+        padding: 2rem 2.5rem !important;
+      }
+      
+      h1 { font-size: 2.4em !important; }
+      h2 { font-size: 1.6em !important; }
+      h3 { font-size: 1.1em !important; }
+      
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.8rem !important;
+      }
+      
+      .video-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 0.8rem !important;
+      }
+      
+      .metrics-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1rem !important;
+      }
+      
+      .two-col {
+        grid-template-columns: 1fr !important;
+        gap: 1.2rem !important;
+      }
+      
+      .three-col {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem !important;
+      }
+      
+      .metric-card .number {
+        font-size: 2em !important;
+      }
+      
+      .card {
+        padding: 1rem !important;
+      }
+      
+      .video-card {
+        padding: 0.8rem !important;
+      }
+      
+      .hero::after {
+        width: 80px !important;
+        height: 80px !important;
+        top: 1rem !important;
+        right: 1rem !important;
+      }
+    }
+    
+    /* Mobile: max 768px */
+    @media (max-width: 768px) {
+      section {
+        padding: 1.5rem 1.5rem !important;
+      }
+      
+      h1 {
+        font-size: 1.8em !important;
+        line-height: 1.2 !important;
+      }
+      
+      h2 {
+        font-size: 1.3em !important;
+        margin-bottom: 0.8em !important;
+      }
+      
+      h3 {
+        font-size: 1em !important;
+      }
+      
+      .card-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.6rem !important;
+        margin-top: 1rem !important;
+      }
+      
+      .video-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.6rem !important;
+        margin-top: 0.8rem !important;
+      }
+      
+      .metrics-grid {
+        grid-template-columns: 1fr !important;
+        gap: 0.8rem !important;
+        margin-top: 1rem !important;
+      }
+      
+      .metric-card {
+        padding: 1rem !important;
+      }
+      
+      .metric-card .number {
+        font-size: 1.8em !important;
+      }
+      
+      .card {
+        padding: 0.8rem !important;
+      }
+      
+      .card h3 {
+        font-size: 0.95em !important;
+      }
+      
+      .card p {
+        font-size: 0.85em !important;
+      }
+      
+      .video-card {
+        padding: 0.7rem !important;
+      }
+      
+      .video-card h3 {
+        font-size: 0.85em !important;
+      }
+      
+      .video-card p {
+        font-size: 0.75em !important;
+      }
+      
+      .video-card a {
+        font-size: 0.75em !important;
+        padding: 0.25em 0.6em !important;
+      }
+      
+      .hero::after {
+        display: none !important;
+      }
+      
+      .hero h1 {
+        font-size: 1.6em !important;
+      }
+      
+      .hero .subtitle {
+        font-size: 1em !important;
+      }
+      
+      .hero .tagline {
+        font-size: 0.7em !important;
+        padding: 0.4em 0.8em !important;
+      }
+      
+      .two-col {
+        grid-template-columns: 1fr !important;
+        gap: 0.8rem !important;
+      }
+      
+      .three-col {
+        grid-template-columns: 1fr !important;
+        gap: 0.8rem !important;
+      }
+      
+      section.content ul li {
+        font-size: 0.9em !important;
+        padding-left: 1.2em !important;
+      }
+      
+      .highlight-box {
+        padding: 0.8rem !important;
+      }
+      
+      section.footer h2 {
+        font-size: 1.8em !important;
+      }
+      
+      section.footer p {
+        font-size: 0.9em !important;
+      }
+      
+      .badge {
+        font-size: 0.65em !important;
+        padding: 0.1em 0.4em !important;
+      }
+      
+      code {
+        font-size: 0.75em !important;
+      }
+      
+      small {
+        font-size: 0.7em !important;
+      }
+    }
+    
+    /* Very small screens: max 480px */
+    @media (max-width: 480px) {
+      section {
+        padding: 1rem !important;
+      }
+      
+      h1 {
+        font-size: 1.4em !important;
+      }
+      
+      h2 {
+        font-size: 1.15em !important;
+      }
+      
+      h3 {
+        font-size: 0.9em !important;
+      }
+      
+      .card-grid {
+        gap: 0.5rem !important;
+      }
+      
+      .card {
+        padding: 0.6rem !important;
+      }
+      
+      .card h3 {
+        font-size: 0.85em !important;
+      }
+      
+      .card p {
+        font-size: 0.8em !important;
+      }
+      
+      .video-grid {
+        gap: 0.5rem !important;
+      }
+      
+      .video-card {
+        padding: 0.6rem !important;
+      }
+      
+      .video-card h3 {
+        font-size: 0.8em !important;
+      }
+      
+      .video-card p {
+        font-size: 0.7em !important;
+      }
+      
+      .video-card a {
+        font-size: 0.7em !important;
+        padding: 0.2em 0.5em !important;
+      }
+      
+      .metric-card .number {
+        font-size: 1.5em !important;
+      }
+      
+      .metric-card .label {
+        font-size: 0.8em !important;
+      }
+      
+      .hero h1 {
+        font-size: 1.2em !important;
+      }
+      
+      .hero .subtitle {
+        font-size: 0.85em !important;
+      }
+      
+      .hero .tagline {
+        font-size: 0.6em !important;
+      }
+      
+      section.footer h2 {
+        font-size: 1.4em !important;
+      }
+      
+      section.footer p {
+        font-size: 0.8em !important;
+      }
+      
+      .model-list li {
+        font-size: 0.85em !important;
+        padding-left: 2em !important;
+      }
+      
+      section.content ul li {
+        font-size: 0.8em !important;
+      }
+    }
+    
+    /* Landscape mobile (phone rotated): max 768px and wide aspect ratio */
+    @media (max-width: 768px) and (orientation: landscape) {
+      section {
+        padding: 1rem 1.5rem !important;
+      }
+      
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .video-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .metrics-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+      }
+      
+      h1 { font-size: 1.6em !important; }
+      h2 { font-size: 1.2em !important; }
+    }
+    
+    /* Print styles */
+    @media print {
+      section {
+        padding: 1rem !important;
+        page-break-inside: avoid;
+      }
+      
+      .video-card a {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
