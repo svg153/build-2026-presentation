@@ -3,9 +3,13 @@ node_modules/
 package-lock.json
 
 # Generated output (re-generated from themes + slides)
+# GitHub Pages workflow generates these from microsoft-build-2026.marp.html
 *-final.html
 *.pdf
 *.pptx
+
+# Intermediate/temporary files
+slides.html
 
 # Browser cache (for puppeteer)
 .cache/
