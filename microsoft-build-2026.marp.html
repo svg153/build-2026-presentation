@@ -1240,46 +1240,48 @@
 <section class="content">
   <h2>📚 Recursos y Referencias Oficiales</h2>
   <div class="divider"></div>
-  <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
+  <div class="card-grid" style="grid-template-columns: 1fr 1fr 1fr;">
     <div class="card yellow">
       <h3>📖 CLI Command Reference</h3>
-      <p>Referencia completa de todos los comandos, slash commands, shortcuts, modelos soportados, MCP servers, skills, custom agents, seguridad, OpenTelemetry.</p>
-      <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference" target="_blank" rel="noopener noreferrer">🔗 docs.github.com</a>
+      <p>Todos los comandos, slash commands, modelos, MCP servers, custom agents y seguridad.</p>
+      <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference" target="_blank" rel="noopener noreferrer">🔗 Docs CLI</a>
+      <a href="REFERENCIAS_CLI.md" style="margin-left: 0.5em;">📄 Referencias</a>
     </div>
     <div class="card blue">
       <h3>🛠️ Built-in MCP Servers</h3>
-      <p>github-mcp-server, playwright, fetch, time, computer-use. Configuración de MCP servers con OAuth, OIDC, headless.</p>
+      <p>github-mcp-server, playwright, fetch, time, computer-use.</p>
       <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#built-in-mcp-servers" target="_blank" rel="noopener noreferrer">🔗 Docs</a>
     </div>
     <div class="card green">
       <h3>🤖 Custom Agents</h3>
-      <p>code-review, explore, general-purpose, research, rubber-duck, task. Subagent limits: 32 concurrent, depth 6.</p>
+      <p>code-review, explore, rubber-duck, task. Subagent limits: 32 concurrent, depth 6.</p>
       <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#custom-agents-reference" target="_blank" rel="noopener noreferrer">🔗 Docs</a>
     </div>
     <div class="card purple">
       <h3>🔒 Seguridad</h3>
-      <p>Command safety analysis, env var denylist, web_fetch SSRF protection, OpenTelemetry monitoring.</p>
+      <p>Command safety analysis, env var denylist, SSRF protection, OpenTelemetry.</p>
       <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#security" target="_blank" rel="noopener noreferrer">🔗 Docs</a>
     </div>
     <div class="card red">
-      <h3>🎯 Slash Commands Clave</h3>
-      <p>/fleet (subagents paralelos), /research (deep research), /delegate (PR generado por IA), /compact (reducir contexto).</p>
+      <h3>🎯 Slash Commands</h3>
+      <p>/fleet, /research, /delegate, /compact — agentes paralelos y deep research.</p>
       <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#slash-commands" target="_blank" rel="noopener noreferrer">🔗 Docs</a>
     </div>
     <div class="card lime">
-      <h3>📊 Modelos Soportados</h3>
-      <p>claude-sonnet-4.6 (default), gpt-5.4, claude-haiku-4.5, gpt-5.3-codex, gemini-3.1, gemini-3.5-flash, mai-code-1-flash.</p>
+      <h3>📊 Modelos</h3>
+      <p>claude-sonnet-4.6, gpt-5.4, mai-code-1-flash y 7+ modelos propios.</p>
       <a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#supported-models" target="_blank" rel="noopener noreferrer">🔗 Docs</a>
     </div>
-    <div class="card yellow" style="grid-column: span 2;">
+    <div class="card yellow" style="grid-column: span 3;">
       <h3>🔑 BYOK — Bring Your Own Key (Jun 23, 2026)</h3>
-      <p><strong>Lo más importante:</strong> GitHub Copilot App ahora soporta BYOK — usa tus propios providers (OpenAI, Azure, Anthropic, LM Studio, Ollama, etc.). Los modelos aparecen en el model picker junto a los de Copilot. Las keys se guardan en el OS keychain local.</p>
-      <p><em>Con BYOK puedes: (1) Conectar providers que ya usas, (2) Mix frontier + local models, (3) Mantener tráfico en tu tenant para enterprise.</em></p>
-      <a href="https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok/" target="_blank" rel="noopener noreferrer">📖 GitHub Changelog</a>
+      <p>GitHub Copilot App ahora soporta BYOK — usa tus propios providers (OpenAI, Azure, Anthropic, LM Studio, Ollama).</p>
+      <p><em>Keys guardadas en OS keychain. Mix frontier + local models. Tráfico en tu tenant enterprise.</em></p>
+      <a href="https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok/" target="_blank" rel="noopener noreferrer">📖 Changelog</a>
+      <a href="REFERENCIAS_BYOK.md" style="margin-left: 0.5em;">📄 Changelog completo</a>
     </div>
   </div>
   <div class="highlight-box" style="margin-top: 1.5rem;">
-    <p><strong>📄 Referencias completas:</strong> Ver <code>REFERENCIAS_CLI.md</code> (comandos), <code>REFERENCIAS_BYOK.md</code> (BYOK release), <code>REFERENCIAS.md</code> (vídeos y tuits).</p>
+    <p><strong>📄 Todas las referencias:</strong> <code>REFERENCIAS.md</code> (vídeos y tuits) · <code>REFERENCIAS_CANVAS.md</code> (Canvas) · <code>REFERENCIAS_CREATOR.md</code> (creadores) · <code>REFERENCIAS_CLI.md</code> (CLI) · <code>REFERENCIAS_BYOK.md</code> (BYOK)</p>
   </div>
 </section>
 
@@ -1287,54 +1289,119 @@
      SLIDE 9 — FUENTES
      ============================================================ -->
 <section class="content">
-  <h2>📚 Fuentes y Recursos</h2>
+  <h2>📚 Fuentes y Creadores</h2>
   <div class="divider"></div>
-  <div class="card-grid">
+
+  <h3 style="margin-bottom: 1rem;">🔗 Fuentes Oficiales</h3>
+  <div class="card-grid" style="grid-template-columns: 1fr 1fr 1fr;">
     <div class="card blue">
       <h3>📰 GitHub Blog</h3>
       <p><a href="https://github.blog/changelog/" target="_blank" rel="noopener noreferrer">github.blog/changelog</a></p>
-      <p>Changelog oficial con todos los anuncios de Build 2026</p>
     </div>
     <div class="card yellow">
       <h3>🎥 Microsoft Build</h3>
       <p><a href="https://build.microsoft.com/" target="_blank" rel="noopener noreferrer">build.microsoft.com</a></p>
-      <p>Sessions on-demand, keynotes y materiales</p>
     </div>
     <div class="card green">
       <h3>🎬 YouTube Oficial</h3>
       <p><a href="https://www.youtube.com/@MicrosoftDeveloper" target="_blank" rel="noopener noreferrer">Microsoft Developer</a></p>
-      <p>Videos de Cassidy Williams, Mustafa Suleyman y más</p>
     </div>
     <div class="card purple">
-      <h3>📄 Keynote Completa</h3>
-      <p><a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank" rel="noopener noreferrer">Satya Nadella Opening Keynote</a></p>
-      <p>2h 22min · 520K views</p>
+      <h3>📄 Keynote Satya</h3>
+      <p><a href="https://www.youtube.com/watch?v=FFMm454fxNA" target="_blank" rel="noopener noreferrer">Opening Keynote (2h 22min)</a></p>
+    </div>
+    <div class="card teal">
+      <h3>🛠️ Copilot SDK</h3>
+      <p><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener noreferrer">github.com/github/copilot-sdk</a></p>
+    </div>
+    <div class="card orange">
+      <h3>📋 Awesome Copilot</h3>
+      <p><a href="https://awesome-copilot.github.com/" target="_blank" rel="noopener noreferrer">awesome-copilot.github.com</a></p>
     </div>
   </div>
+
   <div class="divider" style="margin-top: 1.5rem;"></div>
-  <h3>👥 Creadores Recomendados</h3>
-  <div class="card-grid">
+
+  <h3 style="margin-bottom: 1rem;">👥 Equipo GitHub Copilot (X/Twitter)</h3>
+  <div class="card-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
     <div class="card blue">
-      <h3>🎓 John Savill</h3>
-      <p><a href="https://www.youtube.com/@JohnSavill" target="_blank" rel="noopener noreferrer">John Savill's Technical Training</a></p>
-      <p>Build 2026 in 15 Minutes · Microsoft AI Update May 2026</p>
+      <h3>🎯 Evan Boyle</h3>
+      <p><a href="https://x.com/_Evan_Boyle" target="_blank" rel="noopener noreferrer">@_Evan_Boyle</a></p>
+      <p><small>Copilot App, CLI & SDK</small></p>
+      <p><small>Ex PulumiCorp, Azure, Amazon</small></p>
     </div>
     <div class="card yellow">
-      <h3>👨‍💻 Scott Hanselman</h3>
-      <p><a href="https://www.youtube.com/@shanselman" target="_blank" rel="noopener noreferrer">Scott Hanselman</a></p>
-      <p>Trying out the GitHub Copilot App · LIVE from Build 2026</p>
+      <h3>🤖 Derek Legenzoff</h3>
+      <p><a href="https://x.com/DerekLegenzoff" target="_blank" rel="noopener noreferrer">@DerekLegenzoff</a></p>
+      <p><small>Copilot CLI Lead</small></p>
+      <p><small>Seattle</small></p>
     </div>
     <div class="card green">
-      <h3>📊 Vlad Talks Tech</h3>
-      <p><a href="https://www.youtube.com/@VladTalksTech" target="_blank" rel="noopener noreferrer">Vlad Talks Tech</a></p>
-      <p>20+ Big Announcements in 16 Minutes</p>
+      <h3>💻 Tiago Botelho</h3>
+      <p><a href="https://x.com/tiagonbotelho" target="_blank" rel="noopener noreferrer">@tiagonbotelho</a></p>
+      <p><small>Copilot CLI Contributor</small></p>
+      <p><small>Portugal</small></p>
     </div>
     <div class="card purple">
-      <h3>🎥 Microsoft Mechanics</h3>
-      <p><a href="https://www.youtube.com/@MicrosoftMechanics" target="_blank" rel="noopener noreferrer">Microsoft Mechanics</a></p>
-      <p>Rayfin: Go from prompt to production backend</p>
+      <h3>📊 GHCopilotLog</h3>
+      <p><a href="https://x.com/GHCopilotLog" target="_blank" rel="noopener noreferrer">@GHCopilotLog</a></p>
+      <p><small>Bot changelogs Copilot</small></p>
+      <p><small>Run by @jamesmontemagno</small></p>
     </div>
   </div>
+
+  <div class="divider" style="margin-top: 1.5rem;"></div>
+
+  <h3 style="margin-bottom: 1rem;">🌟 Comunidad y Creadores</h3>
+  <div class="card-grid" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+    <div class="card yellow">
+      <h3>🔥 Lee Reilly</h3>
+      <p><a href="https://x.com/leereilly" target="_blank" rel="noopener noreferrer">@leereilly</a></p>
+      <p><small>Quake 30 Canvas demo</small></p>
+      <p><small><a href="https://leereilly.net/quakelike/" target="_blank" rel="noopener noreferrer">leereilly.net/quakelike</a></small></p>
+    </div>
+    <div class="card teal">
+      <h3>🌲 Burke Holland</h3>
+      <p><a href="https://x.com/burkeholland" target="_blank" rel="noopener noreferrer">@burkeholland</a></p>
+      <p><small>Worktree Divergence Canvas</small></p>
+      <p><small>Microsoft</small></p>
+    </div>
+    <div class="card red">
+      <h3>⚔️ Oren Melamed</h3>
+      <p><a href="https://x.com/OrenMe" target="_blank" rel="noopener noreferrer">@OrenMe</a></p>
+      <p><small>/spar — dos agentes compitiendo</small></p>
+    </div>
+    <div class="card lime">
+      <h3>📬 Ismael Canal</h3>
+      <p><a href="https://x.com/basiclines" target="_blank" rel="noopener noreferrer">@basiclines</a></p>
+      <p><small>/inbox, auto-merge, gh://</small></p>
+    </div>
+    <div class="card blue">
+      <h3>👶 Marc-André Moreau</h3>
+      <p><a href="https://x.com/awakecoding" target="_blank" rel="noopener noreferrer">@awakecoding</a></p>
+      <p><small>Child Sessions</small></p>
+    </div>
+    <div class="card orange">
+      <h3>🎓 Pierce Boggan</h3>
+      <p><a href="https://x.com/pierceboggan" target="_blank" rel="noopener noreferrer">@pierceboggan</a></p>
+      <p><small>gh:// trick</small></p>
+    </div>
+    <div class="card green">
+      <h3>📊 John Savill</h3>
+      <p><a href="https://www.youtube.com/@JohnSavill" target="_blank" rel="noopener noreferrer">John Savill</a></p>
+      <p><small>Build 2026 in 15 min</small></p>
+    </div>
+    <div class="card purple">
+      <h3>👨‍💻 Scott Hanselman</h3>
+      <p><a href="https://www.youtube.com/@shanselman" target="_blank" rel="noopener noreferrer">Scott Hanselman</a></p>
+      <p><small>Trying Copilot App · LIVE Build</small></p>
+    </div>
+  </div>
+
+  <div class="divider" style="margin-top: 1.5rem;"></div>
+  <p style="text-align: center; color: var(--build-text-secondary);">
+    <strong>📄 Todas las fuentes y referencias:</strong> <code>REFERENCIAS.md</code> · <code>REFERENCIAS_CANVAS.md</code> · <code>REFERENCIAS_CREATOR.md</code> · <code>REFERENCIAS_CLI.md</code> · <code>REFERENCIAS_BYOK.md</code>
+  </p>
 </section>
 
 <!-- ============================================================
