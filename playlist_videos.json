@@ -1,0 +1,87 @@
+{
+  "playlist_id": "PLlrxD0HtieHicIn65R7Oi_1nFXQr4SbtU",
+  "playlist_title": "Microsoft Build 2026",
+  "total_videos": 225,
+  "selected_videos": [
+    {
+      "title": "GitHub App + Rayfin: Microsoft Build 2026",
+      "id": "gJX6MOyef8Q",
+      "duration": "5:47",
+      "source": "Microsoft Developer (oficial)",
+      "playlist_idx": "#014",
+      "why": "Demo principal de Cassidy Williams"
+    },
+    {
+      "title": "Frontier Tuning: Microsoft Build 2026",
+      "id": "ynxh3ujRIKk",
+      "duration": "5:28",
+      "source": "Microsoft (oficial)",
+      "playlist_idx": "#021",
+      "why": "Explica Frontier Tuning de MAI"
+    },
+    {
+      "title": "Voice Coding Demo: MAI-Code-1-Flash",
+      "id": "3nGPxJ0kJ7k",
+      "duration": "~2:00",
+      "source": "Microsoft (oficial)",
+      "playlist_idx": "N/A (post-build)",
+      "why": "Demo oficial de voz con MAI"
+    },
+    {
+      "title": "GitHub Copilot App Launch \u2014 Rubber Duck Takeover",
+      "id": "JXw9QXlV50s",
+      "duration": "~10:00",
+      "source": "GitHub (oficial)",
+      "playlist_idx": "N/A (post-build)",
+      "why": "Lanzamiento oficial del producto"
+    },
+    {
+      "title": "Microsoft IQ: Microsoft Build 2026",
+      "id": "X4SOHRhJwfE",
+      "duration": "5:51",
+      "source": "Microsoft (oficial)",
+      "playlist_idx": "#031",
+      "why": "Explica el ecosistema de IA"
+    },
+    {
+      "title": "Developer Experience on Windows: Microsoft Build 2026",
+      "id": "xVWHZkuhgys",
+      "duration": "5:58",
+      "source": "Microsoft (oficial)",
+      "playlist_idx": "#022",
+      "why": "Contexto de desarrollo en Windows"
+    },
+    {
+      "title": "How Microsoft AI builds coding models optimized for GitHub Copilot",
+      "id": "Agc6Ik00R1g",
+      "duration": "16:19",
+      "source": "Microsoft Developer (oficial)",
+      "playlist_idx": "#043",
+      "why": "Detalles t\u00e9cnicos de MAI models"
+    },
+    {
+      "title": "Under the hood of Microsoft AI models",
+      "id": "5vz1pUSpRAE",
+      "duration": "18:19",
+      "source": "Microsoft (oficial)",
+      "playlist_idx": "#042",
+      "why": "Arquitectura de los modelos"
+    },
+    {
+      "title": "Extend GitHub Copilot with the Copilot SDK",
+      "id": "mvkAnYYeB0M",
+      "duration": "15:34",
+      "source": "Microsoft Developer (oficial)",
+      "playlist_idx": "#053",
+      "why": "SDK para extender Copilot"
+    },
+    {
+      "title": "How we ship models in VS Code",
+      "id": "82WO6R--wxo",
+      "duration": "16:18",
+      "source": "Microsoft Developer (oficial)",
+      "playlist_idx": "#074",
+      "why": "Proceso de despliegue de modelos"
+    }
+  ]
+}
