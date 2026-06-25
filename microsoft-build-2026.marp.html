@@ -873,6 +873,44 @@
       section.content ul li {
         font-size: 0.8em !important;
       }
+      
+      /* Fix long reference file names wrapping */
+      .highlight-box p,
+      .highlight-box a,
+      .highlight-box code {
+        white-space: normal !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+      }
+      
+      /* Make reference links wrap nicely */
+      .highlight-box a {
+        display: inline-block !important;
+        margin: 0.2rem 0 !important;
+        font-size: 0.75em !important;
+      }
+      
+      /* Fix BYOK and long text cards */
+      .card p small a {
+        font-size: 0.75em !important;
+        word-break: break-all !important;
+      }
+      
+      /* Fix metrics labels wrapping */
+      .metric-card .label {
+        font-size: 0.75em !important;
+        line-height: 1.3 !important;
+      }
+      
+      /* Fix two-col lists on tiny screens */
+      .two-col ul li {
+        font-size: 0.75em !important;
+        line-height: 1.3 !important;
+      }
+      
+      .two-col ul li a {
+        font-size: 0.7em !important;
+      }
     }
     
     /* Landscape mobile (phone rotated): max 768px and wide aspect ratio */
@@ -1280,7 +1318,14 @@
     </div>
   </div>
   <div class="highlight-box" style="margin-top: 1.5rem;">
-    <p><strong>📄 Todas las referencias:</strong> <a href="REFERENCIAS.md" target="_blank">REFERENCIAS.md</a> (vídeos y tuits) · <a href="REFERENCIAS_CANVAS.md" target="_blank">REFERENCIAS_CANVAS.md</a> (Canvas) · <a href="REFERENCIAS_CREATOR.md" target="_blank">REFERENCIAS_CREATOR.md</a> (creadores) · <a href="REFERENCIAS_CLI.md" target="_blank">REFERENCIAS_CLI.md</a> (CLI) · <a href="REFERENCIAS_BYOK.md" target="_blank">REFERENCIAS_BYOK.md</a> (BYOK)</p>
+    <p><strong>📄 Todas las referencias:</strong></p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.4rem; margin-top: 0.5rem;">
+      <a href="REFERENCIAS.md" target="_blank" rel="noopener noreferrer">📄 REFERENCIAS.md</a>
+      <a href="REFERENCIAS_CANVAS.md" target="_blank" rel="noopener noreferrer">📄 REFERENCIAS_CANVAS.md</a>
+      <a href="REFERENCIAS_CREATOR.md" target="_blank" rel="noopener noreferrer">📄 REFERENCIAS_CREATOR.md</a>
+      <a href="REFERENCIAS_CLI.md" target="_blank" rel="noopener noreferrer">📄 REFERENCIAS_CLI.md</a>
+      <a href="REFERENCIAS_BYOK.md" target="_blank" rel="noopener noreferrer">📄 REFERENCIAS_BYOK.md</a>
+    </div>
   </div>
 </section>
 
@@ -1398,9 +1443,16 @@
   </div>
 
   <div class="divider" style="margin-top: 1.5rem;"></div>
-  <p style="text-align: center; color: var(--build-text-secondary);">
-    <strong>📄 Todas las fuentes y referencias:</strong> <a href="REFERENCIAS.md" target="_blank">REFERENCIAS.md</a> · <a href="REFERENCIAS_CANVAS.md" target="_blank">REFERENCIAS_CANVAS.md</a> · <a href="REFERENCIAS_CREATOR.md" target="_blank">REFERENCIAS_CREATOR.md</a> · <a href="REFERENCIAS_CLI.md" target="_blank">REFERENCIAS_CLI.md</a> · <a href="REFERENCIAS_BYOK.md" target="_blank">REFERENCIAS_BYOK.md</a>
-  </p>
+  <div style="text-align: center; color: var(--build-text-secondary);">
+    <p style="margin-bottom: 0.5rem;"><strong>📄 Todas las fuentes y referencias:</strong></p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 0.3rem;">
+      <a href="REFERENCIAS.md" target="_blank" rel="noopener noreferrer" style="color: var(--build-text-secondary); font-size: 0.85em;">📄 REFERENCIAS.md</a>
+      <a href="REFERENCIAS_CANVAS.md" target="_blank" rel="noopener noreferrer" style="color: var(--build-text-secondary); font-size: 0.85em;">📄 REFERENCIAS_CANVAS.md</a>
+      <a href="REFERENCIAS_CREATOR.md" target="_blank" rel="noopener noreferrer" style="color: var(--build-text-secondary); font-size: 0.85em;">📄 REFERENCIAS_CREATOR.md</a>
+      <a href="REFERENCIAS_CLI.md" target="_blank" rel="noopener noreferrer" style="color: var(--build-text-secondary); font-size: 0.85em;">📄 REFERENCIAS_CLI.md</a>
+      <a href="REFERENCIAS_BYOK.md" target="_blank" rel="noopener noreferrer" style="color: var(--build-text-secondary); font-size: 0.85em;">📄 REFERENCIAS_BYOK.md</a>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================================
