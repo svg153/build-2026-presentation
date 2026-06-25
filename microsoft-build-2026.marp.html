@@ -1027,19 +1027,19 @@
       <p><small><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener noreferrer">📖 SDK</a> · <a href="https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok/" target="_blank" rel="noopener noreferrer">📄 Changelog</a></small></p>
     </div>
     <div class="card yellow">
-      <h3>🧠 Copilot Workspaces</h3>
-      <p>Espacios de trabajo inteligentes que organizan tareas, archivos y contexto automáticamente para flujos de desarrollo complejos.</p>
-      <p><small><a href="https://docs.github.com/en/copilot/how-tos/github-copilot-app/working-with-canvas-extensions" target="_blank" rel="noopener noreferrer">📖 Docs</a> · <a href="REFERENCIAS_CANVAS.md" target="_blank" rel="noopener noreferrer">📄 Canvas</a></small></p>
+      <h3>📦 Copilot SDK GA 1.0</h3>
+      <p>SDK multiplataforma para integrar GitHub Copilot Agent en apps y servicios. 6 lenguajes: Python, .NET, TypeScript, Go, Java, Rust.</p>
+      <p><small><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener noreferrer">🐙 SDK Repo</a> · <a href="https://awesome-copilot.github.com/extensions" target="_blank" rel="noopener noreferrer">📋 Awesome Copilot</a></small></p>
     </div>
     <div class="card green">
-      <h3>📦 GitHub Models</h3>
-      <p>Plataforma integrada para probar, comparar y desplegar modelos de IA directamente desde GitHub, sin salir del flujo de trabajo.</p>
-      <p><small><a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#supported-models" target="_blank" rel="noopener noreferrer">📖 Docs</a> · <a href="REFERENCIAS_CREATOR.md" target="_blank" rel="noopener noreferrer">📄 MAI Models</a></small></p>
+      <h3>🛠️ Built-in MCP Servers</h3>
+      <p>github-mcp-server, playwright, fetch, time, computer-use. Integración nativa con herramientas del ecosistema.</p>
+      <p><small><a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference" target="_blank" rel="noopener noreferrer">📖 Docs CLI</a> · <a href="REFERENCIAS_CLI.md" target="_blank" rel="noopener noreferrer">📄 MCP Servers</a></small></p>
     </div>
     <div class="card purple">
-      <h3>🤖 Agent Finder</h3>
-      <p>Nuevo sistema para descubrir y configurar agentes de IA personalizados para tu equipo y repositorio.</p>
-      <p><small><a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#custom-agents-reference" target="_blank" rel="noopener noreferrer">📖 Docs</a> · <a href="REFERENCIAS_CLI.md" target="_blank" rel="noopener noreferrer">📄 CLI</a></small></p>
+      <h3>🤖 Custom Agents</h3>
+      <p>code-review, explore, rubber-duck, task. Subagent limits: 32 concurrent, depth 6. Configurables por usuario o equipo.</p>
+      <p><small><a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference#custom-agents-reference" target="_blank" rel="noopener noreferrer">📖 Docs CLI</a> · <a href="REFERENCIAS_CLI.md" target="_blank" rel="noopener noreferrer">📄 Custom Agents</a></small></p>
     </div>
   </div>
 </section>
@@ -1052,14 +1052,14 @@
   <div class="divider"></div>
   <div class="metrics-grid">
     <div class="metric-card">
-      <span class="number">90%</span>
-      <span class="label">de desarrolladores usan Copilot como autocomplete básico</span>
-      <p><small><a href="https://github.blog/changelog/2026-06-23-github-copilot-app-support-for-byok/" target="_blank" rel="noopener noreferrer">📖 Changelog</a> · <a href="REFERENCIAS.md" target="_blank" rel="noopener noreferrer">📄 Fuentes</a></small></p>
+      <span class="number">GA 1.0</span>
+      <span class="label">Copilot SDK — General Availability</span>
+      <p><small><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener noreferrer">📖 SDK</a> · <a href="REFERENCIAS.md" target="_blank" rel="noopener noreferrer">📄 Fuentes</a></small></p>
     </div>
     <div class="metric-card">
-      <span class="number">30%</span>
-      <span class="label">de aumento en velocidad de entrega con Copilot CLI</span>
-      <p><small><a href="https://docs.github.com/en/copilot/reference/copilot-cli-reference/cli-command-reference" target="_blank" rel="noopener noreferrer">📖 Docs CLI</a> · <a href="REFERENCIAS_CLI.md" target="_blank" rel="noopener noreferrer">📄 CLI</a></small></p>
+      <span class="number">6</span>
+      <span class="label">Lenguajes soportados: Python, .NET, TS, Go, Java, Rust</span>
+      <p><small><a href="https://github.com/github/copilot-sdk" target="_blank" rel="noopener noreferrer">📖 SDK</a> · <a href="REFERENCIAS.md" target="_blank" rel="noopener noreferrer">📄 Fuentes</a></small></p>
     </div>
     <div class="metric-card">
       <span class="number">100M+</span>
@@ -1101,16 +1101,12 @@
   <p>Mustafa Suleyman (CEO de Microsoft AI) presenta <strong>7 nuevos modelos de IA</strong> propios de Microsoft</p>
   <div class="divider"></div>
   <ul class="model-list">
-    <li><strong>Maia</strong> — LLM de lenguaje a escala GPT-5, optimizado para reasoning y coding</li>
-    <li><strong>Mila</strong> — Modelo vision-language multimodal de última generación</li>
-    <li><strong>Moataz</strong> — Especializado en reasoning complejo y planificación de agentes</li>
-    <li><strong>MAI-Code-1</strong> — Familia de modelos para código (Flash, Pro, Standard)</li>
-    <li><strong>MAI-Code-1-Flash</strong> — El más rápido, ya integrado en Copilot</li>
-    <li><strong>MAI-Research</strong> — Para análisis profundo y generación de documentación técnica</li>
-    <li><strong>MAI-Small</strong> — Modelo eficiente para edge y dispositivos con recursos limitados</li>
+    <li><strong>MAI-Code-1-Flash</strong> — El modelo de código más rápido de Microsoft, ya integrado en Copilot</li>
+    <li><strong>MAI-Code-1</strong> — Familia de modelos para código optimizada para reasoning y coding</li>
+    <li><strong>7 modelos propios</strong> — Microsoft ahora tiene su propia familia de modelos propietarios</li>
   </ul>
   <div class="highlight-box">
-    <p><strong>💡 Por qué importa:</strong> Microsoft ahora tiene su propia familia de modelos propietarios, reduciendo dependencia de OpenAI y creando un stack de IA vertical integrado.</p>
+    <p><strong>💡 Por qué importa:</strong> Microsoft ahora tiene su propia familia de modelos propietarios (MAI), reduciendo dependencia de OpenAI y creando un stack de IA vertical integrado. <em>Referencia: REFERENCIAS.md — Vídeos MAI / Frontier Tuning</em></p>
   </div>
 </section>
 
