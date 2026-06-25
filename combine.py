@@ -24,7 +24,7 @@ def extract_slides(output='slides.html'):
         slides_html = slide_match.group(1)
         with open(output, 'w', encoding='utf-8') as f:
             f.write(slides_html)
-        print(f"[OK] slides.html extraido ({len(slides_html)} chars)")
+        print(f"[OK] slides.html extraído ({len(slides_html)} chars)")
         return output
     else:
         print("ERROR: No se encontraron slides")
