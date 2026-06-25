@@ -947,25 +947,10 @@
       }
     }
   
-    /* QR slide: checkbox hack — QR block hidden by default */
-    #qr-toggle:checked ~ .qr-block {
-      display: block !important;
-    }
-    
-    #qr-toggle:checked ~ label.qr-toggle {
-      color: rgba(255,255,255,0.3) !important;
-    }
-    
-    /* Make sure hero section is compact */
-    section.hero {
-      justify-content: flex-start !important;
-    }
-    
     /* On mobile, make the toggle slightly more visible */
     @media (max-width: 768px) {
-      label.qr-toggle {
-        font-size: 1em !important;
-        color: rgba(255,255,255,0.15) !important;
+      details summary {
+        font-size: 0.7em !important;
       }
     }
 </style>
@@ -973,31 +958,34 @@
 <body>
 
 <!-- ============================================================
-     SLIDE 0 — ACCESO RÁPIDO (QR) — banner pequeño arriba, QRs ocultos
+     SLIDE 0 — ACCESO RÁPIDO (QR) — línea invisible, QRs mínimos
      ============================================================ -->
-<section class="hero" style="background: var(--build-dark); display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 3rem !important; position: relative;">
-  <!-- Checkbox hack: checkbox antes de los elementos que queremos controlar -->
-  <input type="checkbox" id="qr-toggle" hidden>
-  
-  <!-- Tiny banner line — looks like a subtle header -->
-  <div style="width: 100%; text-align: center; padding-bottom: 0.3em; border-bottom: 1px solid rgba(255,255,255,0.06); margin-bottom: 2rem;">
-    <span style="font-size: 0.6em; color: rgba(255,255,255,0.2); letter-spacing: 0.5px;">📱 Accede a la presentación y al repositorio</span>
-    <label for="qr-toggle" class="qr-toggle" style="cursor: pointer; color: rgba(255,255,255,0.1); font-size: 0.8em; margin-left: 0.3em;">⋯</label>
-  </div>
-  
-  <!-- QR block: hidden by default, shown when checkbox is checked -->
-  <div class="qr-block" style="display: none; width: 100%; max-width: 500px; text-align: center;">
-    <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1em;">
-      <div style="text-align: center;">
-        <img src="qr-copilot-app.png" alt="QR GitHub Copilot App" style="width: 150px; height: 150px; border: 3px solid var(--build-accent-yellow); border-radius: 8px; background: white; padding: 6px;">
-        <p style="margin-top: 0.5em; font-size: 0.7em; font-weight: bold; color: var(--build-accent-yellow);">📱 Presentación Web</p>
-      </div>
-      <div style="text-align: center;">
-        <img src="qr-github-repo.png" alt="QR GitHub Repository" style="width: 150px; height: 150px; border: 3px solid var(--build-accent-blue); border-radius: 8px; background: white; padding: 6px;">
-        <p style="margin-top: 0.5em; font-size: 0.7em; font-weight: bold; color: var(--build-accent-blue);">🐙 Repositorio</p>
+<section style="background: var(--build-dark); padding: 0.1rem 0.5rem !important; display: flex; align-items: center; justify-content: center; position: relative; min-height: 0 !important; height: 0.5rem !important;">
+  <details style="width: 100%; margin: 0 auto;">
+    <summary style="cursor: pointer; list-style: none; text-align: center; font-size: 0.4em; color: rgba(255,255,255,0.04); user-select: none; outline: none; line-height: 1;">
+      <a href="https://svg153.github.io/build-2026-presentation/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">📱</a>
+    </summary>
+    <div style="text-align: center; padding: 0.5rem 0;">
+      <div style="display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+        <div style="text-align: center;">
+          <a href="https://svg153.github.io/build-2026-presentation/" target="_blank" rel="noopener noreferrer">
+            <img src="qr-copilot-app.png" alt="QR Web" style="width: 70px; height: 70px; border: 2px solid var(--build-accent-yellow); border-radius: 4px; background: white; padding: 2px;">
+          </a>
+          <p style="margin-top: 0.2em; font-size: 0.45em; font-weight: bold; color: var(--build-accent-yellow);">
+            <a href="https://svg153.github.io/build-2026-presentation/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Web</a>
+          </p>
+        </div>
+        <div style="text-align: center;">
+          <a href="https://github.com/svg153/build-2026-presentation" target="_blank" rel="noopener noreferrer">
+            <img src="qr-github-repo.png" alt="QR GitHub" style="width: 70px; height: 70px; border: 2px solid var(--build-accent-blue); border-radius: 4px; background: white; padding: 2px;">
+          </a>
+          <p style="margin-top: 0.2em; font-size: 0.45em; font-weight: bold; color: var(--build-accent-blue);">
+            <a href="https://github.com/svg153/build-2026-presentation" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">GitHub</a>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </details>
 </section>
 
 <!-- ============================================================
