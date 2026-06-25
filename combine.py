@@ -16,15 +16,15 @@ def extract_slides(output='slides.html'):
         print(f"ERROR: {marp_path} no existe")
         sys.exit(1)
     
-    with open(marp_path, 'r') as f:
+    with open(marp_path, 'r', encoding='utf-8') as f:
         content = f.read()
     
     slide_match = re.search(r'</style>(.*?)</html>', content, re.DOTALL)
     if slide_match:
         slides_html = slide_match.group(1)
-        with open(output, 'w') as f:
+        with open(output, 'w', encoding='utf-8') as f:
             f.write(slides_html)
-        print(f"✅ slides.html extraído ({len(slides_html)} chars)")
+        print(f"[OK] slides.html extraido ({len(slides_html)} chars)")
         return output
     else:
         print("ERROR: No se encontraron slides")
@@ -40,12 +40,12 @@ def combine(theme_name, output=None):
         print(f"⚠️  {slides_path} no existe. Extrayendo...")
         extract_slides()
     
-    with open(slides_path, 'r') as f:
+    with open(slides_path, 'r', encoding='utf-8') as f:
         slides_html = f.read()
     
     # Leer base.css
     base_css_path = os.path.join(themes_dir, 'base.css')
-    with open(base_css_path, 'r') as f:
+    with open(base_css_path, 'r', encoding='utf-8') as f:
         base_css = f.read()
     
     # Leer tema específico
@@ -55,7 +55,7 @@ def combine(theme_name, output=None):
         print(f"Temas disponibles: {os.listdir(themes_dir)}")
         sys.exit(1)
     
-    with open(theme_css_path, 'r') as f:
+    with open(theme_css_path, 'r', encoding='utf-8') as f:
         theme_css = f.read()
     
     # Combinar: base + theme + slides
@@ -80,10 +80,10 @@ def combine(theme_name, output=None):
     if output is None:
         output = f'{theme_name}-final.html'
     
-    with open(output, 'w') as f:
+    with open(output, 'w', encoding='utf-8') as f:
         f.write(final_html)
     
-    print(f"✅ {output} generado ({len(final_html)} chars)")
+    print(f"[OK] {output} generado ({len(final_html)} chars)")
     return output
 
 if __name__ == '__main__':
