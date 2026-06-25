@@ -951,26 +951,29 @@
 <body>
 
 <!-- ============================================================
-     SLIDE 0 — ACCESO RÁPIDO (QR)
+     SLIDE 0 — ACCESO RÁPIDO (QR) — colapsado por defecto
      ============================================================ -->
 <section class="hero" style="background: var(--build-dark); display: flex; flex-direction: column; align-items: center; justify-content: center;">
   <h1 style="font-size: 1.4em; margin-bottom: 0.5em; text-align: center;">📱 Accede a la presentación y al repositorio</h1>
   <p style="font-size: 0.9em; color: var(--build-text-secondary); margin-bottom: 2em;">Escanea con tu móvil para abrir directamente</p>
-  <div style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2em;">
-    <div style="text-align: center;">
-      <img src="qr-copilot-app.png" alt="QR GitHub Copilot App" style="width: 200px; height: 200px; border: 4px solid var(--build-accent-yellow); border-radius: 12px; background: white; padding: 8px;">
-      <p style="margin-top: 0.8em; font-size: 0.85em; font-weight: bold; color: var(--build-accent-yellow);">📱 Presentación Web</p>
-      <p style="font-size: 0.7em; color: var(--build-text-secondary);">https://svg153.github.io/build-2026-presentation/</p>
+  <details style="width: 100%; max-width: 600px;">
+    <summary style="cursor: pointer; font-size: 1em; color: var(--build-accent-yellow); font-weight: bold; padding: 0.5em 1em; background: rgba(255,193,7,0.1); border-radius: 6px; text-align: center; user-select: none;">👆 Pulsa para mostrar los QR (haz clic para desplegar)</summary>
+    <div style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5em; margin-bottom: 1.5em;">
+      <div style="text-align: center;">
+        <img src="qr-copilot-app.png" alt="QR GitHub Copilot App" style="width: 200px; height: 200px; border: 4px solid var(--build-accent-yellow); border-radius: 12px; background: white; padding: 8px;">
+        <p style="margin-top: 0.8em; font-size: 0.85em; font-weight: bold; color: var(--build-accent-yellow);">📱 Presentación Web</p>
+        <p style="font-size: 0.7em; color: var(--build-text-secondary);">https://svg153.github.io/build-2026-presentation/</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="qr-github-repo.png" alt="QR GitHub Repository" style="width: 200px; height: 200px; border: 4px solid var(--build-accent-blue); border-radius: 12px; background: white; padding: 8px;">
+        <p style="margin-top: 0.8em; font-size: 0.85em; font-weight: bold; color: var(--build-accent-blue);">🐙 Repositorio</p>
+        <p style="font-size: 0.7em; color: var(--build-text-secondary);">github.com/svg153/build-2026-presentation</p>
+      </div>
     </div>
-    <div style="text-align: center;">
-      <img src="qr-github-repo.png" alt="QR GitHub Repository" style="width: 200px; height: 200px; border: 4px solid var(--build-accent-blue); border-radius: 12px; background: white; padding: 8px;">
-      <p style="margin-top: 0.8em; font-size: 0.85em; font-weight: bold; color: var(--build-accent-blue);">🐙 Repositorio</p>
-      <p style="font-size: 0.7em; color: var(--build-text-secondary);">github.com/svg153/build-2026-presentation</p>
+    <div class="highlight-box" style="max-width: 500px;">
+      <p style="text-align: center; font-size: 0.8em;"><strong>💡 Tip:</strong> Escanea uno de los QRs para acceder directamente a la presentación en el navegador o al código fuente del repositorio.</p>
     </div>
-  </div>
-  <div class="highlight-box" style="max-width: 500px;">
-    <p style="text-align: center; font-size: 0.8em;"><strong>💡 Tip:</strong> Escanea uno de los QRs para acceder directamente a la presentación en el navegador o al código fuente del repositorio.</p>
-  </div>
+  </details>
 </section>
 
 <!-- ============================================================
